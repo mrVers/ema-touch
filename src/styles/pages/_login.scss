@@ -14,7 +14,7 @@
   }
 
   &:after {
-    background-image: url(../../images/background.jpg);
+    background-image: url(../images/background.jpg);
     background-position: center 10%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -51,7 +51,7 @@
 }
 
 .logo-top {
-  background-image: url('../../assets/logo-70px.png');
+  background-image: url('../assets/logo-70px.png');
   background-size: 100% auto;
   background-repeat: no-repeat;
   height: 70px;
