@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="sl-SI">
+<head>
+    <!-- include head.html -->
+    @@include('../layouts/head.html', {
+    "title": "Dashboard"
+    })
+    <!-- include styles.html -->
+    @@include('../layouts/styles.html')
+</head>
+<body>
+<div class="wrapper">
+    <section class="main-container">
+        <!-- include header.html -->
+        @@include('../layouts/header.html')
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2 d-none d-lg-block">
+                    <div class="right-sidebar">
+                        <img src="../../images/sava_logo.png" class="sava-logo">
+                    </div>
+                </div>
+                <div class="col-lg-8 main-column with-breadcrumbs">
+                    <div class="main-content-breadcrumbs d-none d-lg-flex">
+                        <a href="ema_1.html">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="ema_2.html">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="ema_3.html">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="ema_4.html">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="ema_5.html">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="ema_6.html">
+                            <div class="circle active"></div>
+                        </a>
+                        <a href="#">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="#">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="#">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="#">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="#">
+                            <div class="circle"></div>
+                        </a>
+                    </div>
+                    <div class="main-content-wrapper">
+                        <section class="main-content-container">
+                            <h1>Mesto poškodbe</h1>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="vehicle">
+                                        <div style="position:absolute;; top:15px; left: 5px;">
+                                            <span class="smallfont">Zadaj levo</span>
+                                            <input type="checkbox" name="damage_areas[]" value="leftRear">
+                                        </div>
+                                        <div style="position:absolute;; top:105px; left: 5px;">
+                                            <span class="smallfont">Zadaj</span>
+                                            <input type="checkbox" name="damage_areas[]" value="rear">
+                                        </div>
+                                        <div style="position:absolute;; top:195px; left: 5px;">
+                                            <span class="smallfont">Zadaj desno</span>
+                                            <input type="checkbox" name="damage_areas[]" value="rightRear">
+                                        </div>
+                                        <div style="position:absolute;; top:20px; left: 180px;">
+                                            <input type="checkbox"
+                                                   name="damage_areas[]"
+                                                   value="leftSide">
+                                            <span class="smallfont">Leva stran</span>
+                                        </div>
+                                        <div style="position:absolute;; top:110px; left: 180px;">
+                                            <input type="checkbox"
+                                                   name="damage_areas[]"
+                                                   value="roof">
+                                            <span class="smallfont">Streha</span>
+                                        </div>
+                                        <div style="position:absolute;; top:163px; left: 180px;">
+                                            <input type="checkbox"
+                                                   name="damage_areas[]"
+                                                   value="smallGlass">
+                                            <span class="smallfont">Mala okna</span>
+                                        </div>
+                                        <div style="position:absolute;; top:200px; left: 180px;">
+                                            <input type="checkbox"
+                                                   name="damage_areas[]"
+                                                   value="rightSide">
+                                            <span class="smallfont">Desna stran</span>
+                                        </div>
+                                        <div style="position:absolute;; top:230px; left: 180px;">
+                                            <input type="checkbox"
+                                                   name="damage_areas[]"
+                                                   value="bottom">
+                                            <span class="smallfont">Dno</span>
+                                        </div>
+                                        <div style="position:absolute;; top:-10px; left: 290px;">
+                                            <input type="checkbox"
+                                                   name="damage_areas[]"
+                                                   value="tires">
+                                            <span class="smallfont">Gume</span>
+                                        </div>
+                                        <div style="position:absolute;; top:90px; left: 270px;">
+                                            <input type="checkbox"
+                                                   name="damage_areas[]"
+                                                   value="windshield">
+                                            <span class="smallfont">Vetrobransko steklo</span>
+                                        </div>
+                                        <div style="position:absolute;; top:130px; left: 305px;">
+                                            <input type="checkbox"
+                                                   name="damage_areas[]"
+                                                   value="motor">
+                                            <span class="smallfont">Motor</span>
+                                        </div>
+                                        <div style="position:absolute;; top:20px; left: 355px;">
+                                            <input type="checkbox"
+                                                   name="damage_areas[]"
+                                                   value="leftFront">
+                                            <span class="smallfont">Spredaj levo</span>
+                                        </div>
+                                        <div style="position:absolute;; top:120px; left: 365px;">
+                                            <input type="checkbox"
+                                                   name="damage_areas[]"
+                                                   value="front">
+                                            <span class="smallfont">Spredaj</span>
+                                        </div>
+                                        <div style="position:absolute;; top:200px; left: 355px;">
+                                            <input type="checkbox"
+                                                   name="damage_areas[]"
+                                                   value="rightFront">
+                                            <span class="smallfont">Spredaj desno</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="karoserija" name="damage_areas[]" value="buildUp">
+                                        <label class="form-check-label" for="karoserija">Karoserija</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="notranjost" name="damage_areas[]" value="interior">
+                                        <label class="form-check-label" for="notranjost">Notranjost</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="ogenj" name="damage_areas[]" value="fireDamage">
+                                        <label class="form-check-label" for="ogenj">Ogenj</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="oldParts" name="damage_areas[]" value="oldParts">
+                                        <label class="form-check-label" for="oldParts">Stari deli</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- include select-car-modal.html -->
+    @@include('../partials/select-car-modal.html')
+
+    <!-- include footer.html -->
+    @@include('../layouts/footer.html')
+</div>
+
+<!-- include scripts.html -->
+@@include('../layouts/scripts.html')
+</body>
+</html>

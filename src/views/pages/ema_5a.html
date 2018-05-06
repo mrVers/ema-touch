@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="sl-SI">
+<head>
+    <!-- include head.html -->
+    @@include('../layouts/head.html', {
+    "title": "Dashboard"
+    })
+    <!-- include styles.html -->
+    @@include('../layouts/styles.html')
+</head>
+<body>
+<div class="wrapper">
+    <section class="main-container">
+        <!-- include header.html -->
+        @@include('../layouts/header.html')
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2 d-none d-lg-block">
+                    <div class="right-sidebar">
+                        <img src="../../images/sava_logo.png" class="sava-logo">
+                    </div>
+                </div>
+                <div class="col-lg-8 main-column with-breadcrumbs">
+                    <div class="main-content-breadcrumbs d-none d-lg-flex">
+                        <a href="ema_1.html">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="ema_2.html">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="ema_3.html">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="ema_4.html">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="ema_5.html">
+                            <div class="circle active"></div>
+                        </a>
+                        <a href="ema_6.html">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="#">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="#">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="#">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="#">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="#">
+                            <div class="circle"></div>
+                        </a>
+                    </div>
+                    <div class="main-content-wrapper">
+                        <section class="main-content-container">
+                            <h1>Podatki o vozniku</h1>
+                            <div class="row car-data">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label>Eurotax koda</label>
+                                        <p>000-000</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Znamka</label>
+                                        <p>Ford (D)</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Model</label>
+                                        <p>Fiesta (08/2017 - )</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Tip</label>
+                                        <p>Fiesta 1,1 Trend</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>CCM</label>
+                                        <p>1084</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>CCM</label>
+                                        <p>1084</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>kW</label>
+                                        <p>52</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>HP</label>
+                                        <p>82</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Natcode</label>
+                                        <p>N12454433322</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="main-car-image">
+                                        <img class="main-car-image-src" src="../../images/background.jpg">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <form class="needs-validation" action="ema_6.html" novalidate>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group date">
+                                            <label for="datumRegistracije">Datum 1. registracije</label>
+                                            <input type="text" class="form-control" name="datumRegistracije" id="datumRegistracije" required>
+                                            <div class="input-group-addon"><i class="far fa-calendar-alt"></i></div>
+                                            <div class="invalid-feedback">
+                                                Polje je zahtevano.
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="kmDriven">Prevoženi kilometri</label>
+                                            <input type="number" class="form-control" name="kmDriven" id="kmDriven" required>
+                                            <div class="valid-check"><i class="fas fa-check"></i></div>
+                                            <div class="invalid-feedback">
+                                                Polje je zahtevano.
+                                            </div>
+                                        </div>
+                                        <div class="form-group ema-select">
+                                            <label for="yearBuild">Modelno leto</label>
+                                            <i class="fas fa-angle-down"></i>
+                                            <select id="yearBuild" name="yearBuild" class="form-control">
+                                                <option value="" selected>Izberi...</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="regNumber">Registerska številka</label>
+                                            <input type="text" class="form-control" name="regNumber" id="regNumber">
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6 ema-select">
+                                                <label for="status">Stanje vozila</label>
+                                                <i class="fas fa-angle-down"></i>
+                                                <select id="status" name="status" class="form-control">
+                                                    <option value="" selected>Izberi...</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-md-6 ema-select">
+                                                <label for="drivable">Vozen</label>
+                                                <i class="fas fa-angle-down"></i>
+                                                <select id="drivable" name="drivable" class="form-control">
+                                                    <option value="" selected>Izberi...</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="stSasije">Številka šasije</label>
+                                            <input type="text" class="form-control" name="stSasije" id="stSasije">
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6 ema-select">
+                                                <label for="color">Barva</label>
+                                                <i class="fas fa-angle-down"></i>
+                                                <select id="color" name="color" class="form-control">
+                                                    <option value="" selected>Izberi...</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-md-6 ema-select">
+                                                <label for="code">Koda</label>
+                                                <i class="fas fa-angle-down"></i>
+                                                <select id="code" name="code" class="form-control">
+                                                    <option value="" selected>Izberi...</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="tipMotorja">Tip motorja</label>
+                                            <input type="text" class="form-control" name="tipMotorja" id="tipMotorja">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Gume</label>
+                                            <div class="form-row">
+                                                <div class="form-group col-sm-3">
+                                                    <input type="text" class="form-control" name="gume1" id="gume1">
+                                                </div>
+                                                <div class="form-group col-sm-3">
+                                                    <input type="text" class="form-control" name="gume2" id="gume2">
+                                                </div>
+                                                <div class="form-group col-sm-3">
+                                                    <input type="text" class="form-control" name="gume3" id="gume3">
+                                                </div>
+                                                <div class="form-group col-sm-3">
+                                                    <input type="text" class="form-control" name="gume4" id="gume4">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Potrdi</button>
+                            </form>
+
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- include footer.html -->
+    @@include('../layouts/footer.html')
+</div>
+
+<!-- include scripts.html -->
+@@include('../layouts/scripts.html')
+</body>
+</html>

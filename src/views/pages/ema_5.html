@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="sl-SI">
+<head>
+    <!-- include head.html -->
+    @@include('../layouts/head.html', {
+    "title": "Dashboard"
+    })
+    <!-- include styles.html -->
+    @@include('../layouts/styles.html')
+</head>
+<body>
+<div class="wrapper">
+    <section class="main-container">
+        <!-- include header.html -->
+        @@include('../layouts/header.html')
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2 d-none d-lg-block">
+                    <div class="right-sidebar">
+                        <img src="../../images/sava_logo.png" class="sava-logo">
+                    </div>
+                </div>
+                <div class="col-lg-8 main-column with-breadcrumbs">
+                    <div class="main-content-breadcrumbs d-none d-lg-flex">
+                        <a href="ema_1.html">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="ema_2.html">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="ema_3.html">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="ema_4.html">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="ema_5.html">
+                            <div class="circle active"></div>
+                        </a>
+                        <a href="ema_6.html">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="#">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="#">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="#">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="#">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="#">
+                            <div class="circle"></div>
+                        </a>
+                    </div>
+                    <div class="main-content-wrapper">
+                        <section class="main-content-container">
+                            <h1>Podatki o vozilu</h1>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#selectCarModal">
+                                Izbor vozila
+                            </button>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- include select-car-modal.html -->
+    @@include('../partials/select-car-modal.html')
+
+    <!-- include footer.html -->
+    @@include('../layouts/footer.html')
+</div>
+
+<!-- include scripts.html -->
+@@include('../layouts/scripts.html')
+</body>
+</html>

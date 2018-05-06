@@ -1,0 +1,75 @@
+.login-background {
+
+  &:before {
+    background-color: rgba(42, 54, 59, 0.85);
+    height: 100%;
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &:after {
+    background-image: url(../../images/background.jpg);
+    background-position: center 10%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    left: 0;
+    right: 0;
+  }
+
+}
+
+.login-wrapper {
+  margin: 150px 10px 50px 10px;
+  max-width: 650px;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px 0 rgba(213, 213, 213, 0.5);
+  padding: 50px 40px;
+
+  @media screen and (max-width: 767px) {
+    margin: 70px 10px 50px;
+  }
+
+  .login-logo {
+    display: block;
+    padding: 0 0 20px;
+  }
+
+}
+
+.logo-top {
+  background-image: url('../../assets/logo-70px.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  left: 50px;
+  top: 20px;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin: auto;
+    top: 10px;
+    left: 0;
+    right: 0;
+    width: 50px;
+  }
+}

@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="sl-SI">
+<head>
+    <!-- include head.html -->
+    @@include('../layouts/head.html', {
+    "title": "Dashboard"
+    })
+    <!-- include styles.html -->
+    @@include('../layouts/styles.html')
+</head>
+<body>
+<div class="wrapper">
+    <section class="main-container">
+        <!-- include header.html -->
+        @@include('../layouts/header.html')
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2 d-none d-lg-block">
+                    <div class="right-sidebar">
+                        <img src="../../images/sava_logo.png" class="sava-logo">
+                    </div>
+                </div>
+                <div class="col-lg-8 main-column with-breadcrumbs">
+                    <div class="main-content-breadcrumbs d-none d-lg-flex">
+                        <a href="ema_1.html">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="ema_2.html">
+                            <div class="circle active"></div>
+                        </a>
+                        <a href="ema_3.html">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="ema_4.html">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="ema_5.html">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="ema_6.html">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="#">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="#">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="#">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="#">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="#">
+                            <div class="circle"></div>
+                        </a>
+                    </div>
+                    <div class="main-content-wrapper">
+                        <section class="main-content-container">
+                            <h1>Naslov polja</h1>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <form class="needs-validation" action="ema_3.html" novalidate>
+                                        <div class="form-group ema-select">
+                                            <label for="avtoKasko">Avto kasko (AKP)</label>
+                                            <i class="fas fa-angle-down"></i>
+                                            <select id="avtoKasko" name="avtoKasko" class="form-control" required>
+                                                <option value="" selected>Izberi...</option>
+                                                <option value="">...</option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                Polje je zahtevano.
+                                            </div>
+                                        </div>
+                                        <div class="form-group ema-select">
+                                            <label for="vzrok">Začasni vzrok</label>
+                                            <i class="fas fa-angle-down"></i>
+                                            <select id="vzrok" name="vzrok" class="form-control" required>
+                                                <option value="">Izberi...</option>
+                                                <option value="">...</option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                Polje je zahtevano.
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="skodniSpis">Škodni spis</label>
+                                            <input type="text" class="form-control" name="skodniSpis" id="skodniSpis" required>
+                                            <div class="valid-check"><i class="fas fa-check"></i></div>
+                                            <div class="invalid-feedback">
+                                                Polje je zahtevano.
+                                            </div>
+                                        </div>
+                                        <div class="form-group date">
+                                            <label for="datumDogodka">Datum dogodka</label>
+                                            <input type="text" class="form-control" name="datumDogodka" id="datumDogodka" required>
+                                            <div class="input-group-addon"><i class="far fa-calendar-alt"></i></div>
+                                            <div class="invalid-feedback">
+                                                Polje je zahtevano.
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group date">
+                                            <label for="datumZapisnika">Datum policijskega zapisnika</label>
+                                            <input type="text" class="form-control" name="datumZapisnika" id="datumZapisnika" required>
+                                            <div class="input-group-addon"><i class="far fa-calendar-alt"></i></div>
+                                            <div class="invalid-feedback">
+                                                Polje je zahtevano.
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="placeVisit">Kraj</label>
+                                            <input type="text" class="form-control" name="placeVisit" id="placeVisit" required>
+                                            <div class="valid-check"><i class="fas fa-check"></i></div>
+                                            <div class="invalid-feedback">
+                                                Polje je zahtevano.
+                                            </div>
+                                        </div>
+                                        <div class="form-group date">
+                                            <label for="datum">Datum</label>
+                                            <input type="text" class="form-control" name="datum" id="datum" required>
+                                            <div class="input-group-addon"><i class="far fa-calendar-alt"></i></div>
+                                            <div class="invalid-feedback">
+                                                Polje je zahtevano.
+                                            </div>
+                                        </div>
+
+                                        <button type="submit" class="btn btn-primary">Potrdi</button>
+                                    </form>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label>Veljavnost police</label>
+                                        <p>00.00.2018 - 00.00.2018</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Varianta zavarovanja</label>
+                                        <p>Avto kasko</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Način popravila</label>
+                                        <p>Način popravila</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Odbitna fransiza</label>
+                                        <p>313 EUR</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Izbira servisa</label>
+                                        <p>Avtoličarstvo Božič</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- include footer.html -->
+    @@include('../layouts/footer.html')
+</div>
+
+<!-- include scripts.html -->
+@@include('../layouts/scripts.html')
+</body>
+</html>

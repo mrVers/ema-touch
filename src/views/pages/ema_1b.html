@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="sl-SI">
+<head>
+    <!-- include head.html -->
+    @@include('../layouts/head.html', {
+    "title": "Dashboard"
+    })
+    <!-- include styles.html -->
+    @@include('../layouts/styles.html')
+</head>
+<body>
+<div class="wrapper">
+    <section class="main-container">
+        <!-- include header.html -->
+        @@include('../layouts/header.html')
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2 d-none d-lg-block">
+                    <div class="right-sidebar">
+                        <img src="../../images/sava_logo.png" class="sava-logo">
+                    </div>
+                </div>
+                <div class="col-lg-8 main-column with-breadcrumbs">
+                    <div class="main-content-breadcrumbs d-none d-lg-flex">
+                        <a href="ema_1.html">
+                            <div class="circle active"></div>
+                        </a>
+                        <a href="ema_2.html">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="ema_3.html">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="ema_4.html">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="ema_5.html">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="ema_6.html">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="#">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="#">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="#">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="#">
+                            <div class="circle"></div>
+                        </a>
+                        <a href="#">
+                            <div class="circle"></div>
+                        </a>
+                    </div>
+                    <div class="main-content-wrapper">
+                        <section class="main-content-container">
+                            <h1>Naslov polja</h1>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <form class="needs-validation" action="ema_1c.html" novalidate>
+                                        <div class="form-group">
+                                            <label>Zavarovalna polica</label>
+                                            <p>000-000000</p>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Zgodovina škodnih zahtevkov</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="NEW" name="zahtevekIzbira" id="zahtevekIzbiraNova" required>
+                                            <label class="form-check-label" for="zahtevekIzbiraNova">
+                                                Nov škodni zahtevek
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="" name="zahtevekIzbira" id="zahtevekIzbira1">
+                                            <label class="form-check-label" for="zahtevekIzbira1">
+                                                000-0000000, Datum prijave: 00.00.00, Škodni spis: AKPH-45336/10, Status: Z
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="" name="zahtevekIzbira" id="zahtevekIzbira2">
+                                            <label class="form-check-label" for="zahtevekIzbira2">
+                                                000-0000000, Datum prijave: 00.00.00, Škodni spis: AKPH-45336/10, Status: Z
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="" name="zahtevekIzbira" id="zahtevekIzbira3">
+                                            <label class="form-check-label" for="zahtevekIzbira3">
+                                                000-0000000, Datum prijave: 00.00.00, Škodni spis: AKPH-45336/10, Status: Z
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" value="" name="zahtevekIzbira" id="zahtevekIzbira4">
+                                            <label class="form-check-label" for="zahtevekIzbira4">
+                                                000-0000000, Datum prijave: 00.00.00, Škodni spis: AKPH-45336/10, Status: Z
+                                            </label>
+                                            <div class="invalid-feedback">
+                                                Polje je zahtevano.
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Potrdi</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- include footer.html -->
+    @@include('../layouts/footer.html')
+</div>
+
+<!-- include scripts.html -->
+@@include('../layouts/scripts.html')
+</body>
+</html>

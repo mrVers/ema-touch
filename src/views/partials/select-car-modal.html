@@ -1,0 +1,134 @@
+<!-- Modal -->
+<div class="modal fade" id="selectCarModal" tabindex="-1" role="dialog" aria-labelledby="selectCarLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Izbor vozila</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="eCode">E-koda</label>
+                            <input type="text" class="form-control" name="eCode" id="eCode">
+                        </div>
+                        <div class="form-group ema-select">
+                            <label for="carType">Vrsta vozila</label>
+                            <i class="fas fa-angle-down"></i>
+                            <select id="carType" name="carType" class="form-control">
+                                <option value="" selected>Izberi...</option>
+                            </select>
+                        </div>
+                        <div class="form-group ema-select">
+                            <label for="carType">Znamka</label>
+                            <i class="fas fa-angle-down"></i>
+                            <select id="carBrand" name="carBrand" class="form-control">
+                                <option value="" selected>Izberi...</option>
+                            </select>
+                        </div>
+                        <div class="form-group ema-select">
+                            <label for="carModel">Model</label>
+                            <i class="fas fa-angle-down"></i>
+                            <select id="carModel" name="carModel" class="form-control">
+                                <option value="" selected>Izberi...</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="stevilkaSasije">Številka šasije</label>
+                            <input type="text" class="form-control" name="stevilkaSasije" id="stevilkaSasije">
+                        </div>
+                        <div class="form-group">
+                            <label for="tipMotorja">Tip motorja</label>
+                            <input type="text" class="form-control" name="tipMotorja" id="tipMotorja">
+                        </div>
+                        <div class="form-group">
+                            <label for="zavPolica">Številka zavarovalne police</label>
+                            <input type="text" class="form-control" name="zavPolica" id="zavPolica">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="modal-search-image">
+                            <img src="../../images/background.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table id="table_id" class="table table-sm table-bordered table-hover table-striped">
+                        <thead>
+                        <tr>
+                            <th scope="col">E-koda</th>
+                            <th scope="col">Zna.</th>
+                            <th scope="col">Mod.</th>
+                            <th scope="col">Tip</th>
+                            <th scope="col">Obd. prodaje</th>
+                            <th scope="col">Iz.</th>
+                            <th scope="col">V.</th>
+                            <th scope="col">CCM</th>
+                            <th scope="col">kW</th>
+                            <th scope="col">KM</th>
+                            <th scope="col">Men.</th>
+                            <th scope="col">Mot.</th>
+                            <th scope="col">Gor.</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>356711</td>
+                            <td>Audi (D)</td>
+                            <td>A1 (06/2010 - 01/2015)</td>
+                            <td>A1 1,4 TFSI Attraction S-tronic</td>
+                            <td>01/2006 - 01/2015</td>
+                            <td>HB</td>
+                            <td>3</td>
+                            <td>1390</td>
+                            <td>90</td>
+                            <td>112</td>
+                            <td>s/7</td>
+                            <td>4/R</td>
+                            <td>Euro 5</td>
+                        </tr>
+                        <tr>
+                            <td>138319</td>
+                            <td>Alfa Romeo (I)</td>
+                            <td>MiTo</td>
+                            <td>MiTo 1,4 MPI Distinctive</td>
+                            <td>07/2009 - 07/2011</td>
+                            <td>HB</td>
+                            <td>3</td>
+                            <td>1368</td>
+                            <td>58</td>
+                            <td>79</td>
+                            <td>m/6</td>
+                            <td>4/R</td>
+                            <td>Euro 5</td>
+                        </tr>
+                        <tr>
+                            <td>138319</td>
+                            <td>Alfa Romeo (I)</td>
+                            <td>MiTo</td>
+                            <td>MiTo 1,4 MPI Distinctive</td>
+                            <td>07/2009 - 07/2011</td>
+                            <td>HB</td>
+                            <td>3</td>
+                            <td>1368</td>
+                            <td>58</td>
+                            <td>79</td>
+                            <td>m/6</td>
+                            <td>4/R</td>
+                            <td>Euro 5</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <a href="../../ema_5a.html"><button type="button" class="btn btn-primary">Save changes</button></a>
+            </div>
+        </div>
+    </div>
+</div>s

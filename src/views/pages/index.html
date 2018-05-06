@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="sl-SI">
+<head>
+    <!-- include head.html -->
+    @@include('../layouts/head.html', {
+    "title": "Eurotax EMA Prijava"
+    })
+    <!-- include styles.html -->
+    @@include('../layouts/styles.html')
+</head>
+<body>
+<div class="wrapper login-background">
+    <section class="main-container">
+        <div id="a" class="block-container">
+            <div class="container-fluid">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-4">
+                        <div class="login-wrapper clearfix">
+                            <img src="../../images/eurotax_logo.png" class="login-logo">
+                            <form action="ema_1.html">
+                                <div class="form-group">
+                                    <label for="email">Uporabniško ime</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Geslo</label>
+                                    <input type="password" class="form-control" id="password" placeholder="Password">
+                                </div>
+                                <button type="submit" class="btn btn-secondary float-right">Prijava</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </section>
+</div>
+
+<!-- include scripts.html -->
+@@include('../layouts/scripts.html')
+</body>
+</html>
