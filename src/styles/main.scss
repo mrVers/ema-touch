@@ -56,19 +56,20 @@ body {
     z-index: 1;
     left: 40px;
     right: 0;
+    width: 140px;
+    background-size: contain;
   }
 
   .sava-logo {
     width: 200px;
-    margin-top: 140px;
-    padding: 0 20px;
+    margin-top: 110px;
+    padding-left: 20px;
   }
 }
 
 .main-content-wrapper {
-  box-shadow: 3px 5.2px 14.7px 6.3px rgba(42, 54, 59, 0.05);
+  box-shadow: 3px 5px 15px 6px #2a363b0c;
   width: 100%;
-  height: 100%;
   display: block;
   min-height: 600px;
   background-color: #fff;
@@ -130,7 +131,7 @@ body {
 
   &:after {
     content: '';
-    top: 15px;
+    top: 13px;
     color: white;
     width: 99%;
     display: block;
@@ -158,16 +159,16 @@ body {
       border-radius: 50px;
       display: inline-block;
       border: 2px solid #fff;
-      width: 18px;
-      height: 18px;
+      width: 15px;
+      height: 15px;
       vertical-align: middle;
       cursor: pointer;
       background-color: #374044;
 
       &.active {
         border: 3px solid #0091b3;
-        width: 30px;
-        height: 30px;
+        width: 26px;
+        height: 26px;
       }
     }
   }
@@ -511,4 +512,72 @@ body {
       font-size: 14px;
     }
   }
+}
+
+.bottom-final-actions {
+  text-align: center;
+
+  .ruler {
+    margin-top: 40px;
+    padding: 40px 0 0;
+    border-top: 1px solid #525b5f;
+    width: 100%;
+    display: block;
+  }
+}
+
+.big-btn {
+  border: 0;
+  outline: none !important;
+  padding: 15px 0;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 300;
+  max-width: 120px;
+  cursor: pointer;
+  transition: color 0.1s ease;
+
+  &:hover {
+    color: #0091b3;
+  }
+
+  i {
+    display: block;
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+}
+
+.navigation-bottom {
+  text-align: center;
+  margin: 20px 0;
+  .caret-btn {
+    outline: none !important;
+    padding: 5px 0px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: color 0.2s ease, border-color 0.2s ease;
+    display: inline-block;
+    width: 54px;
+    height: 54px;
+    border: 2px solid #0091b3;
+    border-radius: 100px;
+    font-size: 28px;
+    color: #0091b3;
+    margin: 0 20px;
+
+
+    &:hover {
+      border-color: #68bcd4;
+      color: #68bcd4;
+    }
+  }
+
+  .navigation-bottom-link {
+    text-decoration: none;
+  }
+}
+
+.dropdown-menu {
+  border-radius: 0;
 }
