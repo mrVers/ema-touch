@@ -61,161 +61,166 @@
                     <div class="main-content-wrapper">
                         <section class="main-content-container">
                             <h1>Mesto poškodbe</h1>
-                            <div class="row" style="margin-bottom: 20px">
-                                <div class="col-lg-3">
-                                    <h3 class="car-title">Spredaj</h3>
-                                    <div class="car-container car-front">
-                                        <div class="car-selector">
-                                            <div class="car-image car-image-front"></div>
-                                            <div class="circle-selector circle-1" title="Spredaj levo">1</div>
-                                            <div class="circle-selector circle-2" title="Spredaj desno">2</div>
+                            <form class="needs-validation" action="ema_6.html" novalidate>
+                                <div class="row" style="margin-bottom: 20px">
+                                    <div class="col-lg-3">
+                                        <h3 class="car-title">Spredaj</h3>
+                                        <div class="car-container car-front">
+                                            <div class="car-selector">
+                                                <div class="car-image car-image-front"></div>
+                                                <div class="circle-selector circle-1" title="Spredaj levo">1</div>
+                                                <div class="circle-selector circle-2" title="Spredaj desno">2</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <h3 class="car-title">Levo</h3>
+                                        <div class="car-container car-left">
+                                            <div class="car-selector">
+                                                <div class="car-image car-image-left"></div>
+                                                <div class="circle-selector circle-3 active" title="Gume">3</div>
+                                                <div class="circle-selector circle-4" title="Leva stran">4</div>
+                                                <div class="circle-selector circle-5" title="Dno">5</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4" style="padding-left: 45px">
+                                        <div class="form-check car-check">
+                                            <div class="circle-selector" title="Spredaj levo">1</div>
+                                            <input type="checkbox" class="form-check-input" id="leftFront" name="damage_areas[]" value="leftFront">
+                                            <label class="form-check-label" for="leftFront">Spredaj levo</label>
+                                        </div>
+                                        <div class="form-check car-check">
+                                            <div class="circle-selector" title="Spredaj desno">2</div>
+                                            <input type="checkbox" class="form-check-input" id="rightFront" name="damage_areas[]" value="rightFront">
+                                            <label class="form-check-label" for="rightFront">Spredaj desno</label>
+                                        </div>
+                                        <div class="form-check car-check">
+                                            <div class="circle-selector active" title="Gume">3</div>
+                                            <input type="checkbox" class="form-check-input" id="tires" name="damage_areas[]" value="tires" checked>
+                                            <label class="form-check-label" for="tires">Gume</label>
+                                        </div>
+                                        <div class="form-check car-check">
+                                            <div class="circle-selector" title="Leva stran">4</div>
+                                            <input type="checkbox" class="form-check-input" id="leftSide" name="damage_areas[]" value="leftSide">
+                                            <label class="form-check-label" for="leftSide">Leva stran</label>
+                                        </div>
+                                        <div class="form-check car-check">
+                                            <div class="circle-selector" title="Dno">5</div>
+                                            <input type="checkbox" class="form-check-input" id="bottom" name="damage_areas[]" value="bottom">
+                                            <label class="form-check-label" for="bottom">Leva stran</label>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-5">
-                                    <h3 class="car-title">Levo</h3>
-                                    <div class="car-container car-left">
-                                        <div class="car-selector">
-                                            <div class="car-image car-image-left"></div>
-                                            <div class="circle-selector circle-3 active" title="Gume">3</div>
-                                            <div class="circle-selector circle-4" title="Leva stran">4</div>
-                                            <div class="circle-selector circle-5" title="Dno">5</div>
+                                <div class="row" style="margin-bottom: 20px">
+                                    <div class="col-lg-3">
+                                        <h3 class="car-title">Zadaj</h3>
+                                        <div class="car-container car-rear">
+                                            <div class="car-selector">
+                                                <div class="car-image car-image-rear"></div>
+                                                <div class="circle-selector circle-6" title="Zadaj levo">6</div>
+                                                <div class="circle-selector circle-7" title="Zadaj desno">7</div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-4" style="padding-left: 45px">
-                                    <div class="form-check car-check">
-                                        <div class="circle-selector" title="Spredaj levo">1</div>
-                                        <input type="checkbox" class="form-check-input" id="leftFront" name="damage_areas[]" value="leftFront">
-                                        <label class="form-check-label" for="leftFront">Spredaj levo</label>
-                                    </div>
-                                    <div class="form-check car-check">
-                                        <div class="circle-selector" title="Spredaj desno">2</div>
-                                        <input type="checkbox" class="form-check-input" id="rightFront" name="damage_areas[]" value="rightFront">
-                                        <label class="form-check-label" for="rightFront">Spredaj desno</label>
-                                    </div>
-                                    <div class="form-check car-check">
-                                        <div class="circle-selector active" title="Gume">3</div>
-                                        <input type="checkbox" class="form-check-input" id="tires" name="damage_areas[]" value="tires" checked>
-                                        <label class="form-check-label" for="tires">Gume</label>
-                                    </div>
-                                    <div class="form-check car-check">
-                                        <div class="circle-selector" title="Leva stran">4</div>
-                                        <input type="checkbox" class="form-check-input" id="leftSide" name="damage_areas[]" value="leftSide">
-                                        <label class="form-check-label" for="leftSide">Leva stran</label>
-                                    </div>
-                                    <div class="form-check car-check">
-                                        <div class="circle-selector" title="Dno">5</div>
-                                        <input type="checkbox" class="form-check-input" id="bottom" name="damage_areas[]" value="bottom">
-                                        <label class="form-check-label" for="bottom">Leva stran</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row" style="margin-bottom: 20px">
-                                <div class="col-lg-3">
-                                    <h3 class="car-title">Zadaj</h3>
-                                    <div class="car-container car-rear">
-                                        <div class="car-selector">
-                                            <div class="car-image car-image-rear"></div>
-                                            <div class="circle-selector circle-6" title="Zadaj levo">6</div>
-                                            <div class="circle-selector circle-7" title="Zadaj desno">7</div>
+                                    <div class="col-lg-5">
+                                        <h3 class="car-title">Desno</h3>
+                                        <div class="car-container car-right">
+                                            <div class="car-selector">
+                                                <div class="car-image car-image-right"></div>
+                                                <div class="circle-selector circle-8" title="Mala okna">8</div>
+                                                <div class="circle-selector circle-9" title="Desna stran">9</div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-5">
-                                    <h3 class="car-title">Desno</h3>
-                                    <div class="car-container car-right">
-                                        <div class="car-selector">
-                                            <div class="car-image car-image-right"></div>
+                                    <div class="col-lg-4" style="padding-left: 45px">
+                                        <div class="form-check car-check">
+                                            <div class="circle-selector" title="Zadaj levo">6</div>
+                                            <input type="checkbox" class="form-check-input" id="leftRear" name="damage_areas[]" value="leftRear">
+                                            <label class="form-check-label" for="leftRear">Zadaj levo</label>
+                                        </div>
+                                        <div class="form-check car-check">
+                                            <div class="circle-selector" title="Zadaj desno">7</div>
+                                            <input type="checkbox" class="form-check-input" id="rightRear" name="damage_areas[]" value="rightRear">
+                                            <label class="form-check-label" for="rightRear">Zadaj desno</label>
+                                        </div>
+                                        <div class="form-check car-check">
                                             <div class="circle-selector circle-8" title="Mala okna">8</div>
+                                            <input type="checkbox" class="form-check-input" id="smallGlass" name="damage_areas[]" value="smallGlass">
+                                            <label class="form-check-label" for="smallGlass">Mala okna</label>
+                                        </div>
+                                        <div class="form-check car-check">
                                             <div class="circle-selector circle-9" title="Desna stran">9</div>
+                                            <input type="checkbox" class="form-check-input" id="rightSide" name="damage_areas[]" value="rightSide">
+                                            <label class="form-check-label" for="rightSide">Desna stran</label>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4" style="padding-left: 45px">
-                                    <div class="form-check car-check">
-                                        <div class="circle-selector" title="Zadaj levo">6</div>
-                                        <input type="checkbox" class="form-check-input" id="leftRear" name="damage_areas[]" value="leftRear">
-                                        <label class="form-check-label" for="leftRear">Zadaj levo</label>
+                                <div class="row" style="margin-bottom: 20px">
+                                    <div class="col-lg-8">
+                                        <h3 class="car-title">Zgoraj</h3>
+                                        <div class="car-container car-top">
+                                            <div class="car-selector">
+                                                <div class="car-image car-image-top"></div>
+                                                <div class="circle-selector circle-10" title="Spredaj">10</div>
+                                                <div class="circle-selector circle-11" title="Motor">11</div>
+                                                <div class="circle-selector circle-12" title="Vetrobransko steklo">12</div>
+                                                <div class="circle-selector circle-13" title="Streha">13</div>
+                                                <div class="circle-selector circle-14" title="Zadaj">14</div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="form-check car-check">
-                                        <div class="circle-selector" title="Zadaj desno">7</div>
-                                        <input type="checkbox" class="form-check-input" id="rightRear" name="damage_areas[]" value="rightRear">
-                                        <label class="form-check-label" for="rightRear">Zadaj desno</label>
-                                    </div>
-                                    <div class="form-check car-check">
-                                        <div class="circle-selector circle-8" title="Mala okna">8</div>
-                                        <input type="checkbox" class="form-check-input" id="smallGlass" name="damage_areas[]" value="smallGlass">
-                                        <label class="form-check-label" for="smallGlass">Mala okna</label>
-                                    </div>
-                                    <div class="form-check car-check">
-                                        <div class="circle-selector circle-9" title="Desna stran">9</div>
-                                        <input type="checkbox" class="form-check-input" id="rightSide" name="damage_areas[]" value="rightSide">
-                                        <label class="form-check-label" for="rightSide">Desna stran</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row" style="margin-bottom: 20px">
-                                <div class="col-lg-8">
-                                    <h3 class="car-title">Zgoraj</h3>
-                                    <div class="car-container car-top">
-                                        <div class="car-selector">
-                                            <div class="car-image car-image-top"></div>
-                                            <div class="circle-selector circle-10" title="Spredaj">10</div>
-                                            <div class="circle-selector circle-11" title="Motor">11</div>
-                                            <div class="circle-selector circle-12" title="Vetrobransko steklo">12</div>
+                                    <div class="col-lg-4" style="padding-left: 45px">
+                                        <div class="form-check car-check">
+                                            <div class="circle-selector" title="Spredaj">10</div>
+                                            <input type="checkbox" class="form-check-input" id="front" name="damage_areas[]" value="front">
+                                            <label class="form-check-label" for="front">Spredaj</label>
+                                        </div>
+                                        <div class="form-check car-check">
+                                            <div class="circle-selector" title="Motor">11</div>
+                                            <input type="checkbox" class="form-check-input" id="motor" name="damage_areas[]" value="motor">
+                                            <label class="form-check-label" for="motor">Motor</label>
+                                        </div>
+                                        <div class="form-check car-check">
+                                            <div class="circle-selector" title="Vetrobransko steklo">12</div>
+                                            <input type="checkbox" class="form-check-input" id="windshield" name="damage_areas[]" value="windshield">
+                                            <label class="form-check-label" for="windshield">Vetrobransko steklo</label>
+                                        </div>
+                                        <div class="form-check car-check">
                                             <div class="circle-selector circle-13" title="Streha">13</div>
+                                            <input type="checkbox" class="form-check-input" id="roof" name="damage_areas[]" value="roof">
+                                            <label class="form-check-label" for="roof">Streha</label>
+                                        </div>
+                                        <div class="form-check car-check">
                                             <div class="circle-selector circle-14" title="Zadaj">14</div>
+                                            <input type="checkbox" class="form-check-input" id="rear" name="damage_areas[]" value="rear">
+                                            <label class="form-check-label" for="rear">Zadaj</label>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4" style="padding-left: 45px">
-                                    <div class="form-check car-check">
-                                        <div class="circle-selector" title="Spredaj">10</div>
-                                        <input type="checkbox" class="form-check-input" id="front" name="damage_areas[]" value="front">
-                                        <label class="form-check-label" for="front">Spredaj</label>
-                                    </div>
-                                    <div class="form-check car-check">
-                                        <div class="circle-selector" title="Motor">11</div>
-                                        <input type="checkbox" class="form-check-input" id="motor" name="damage_areas[]" value="motor">
-                                        <label class="form-check-label" for="motor">Motor</label>
-                                    </div>
-                                    <div class="form-check car-check">
-                                        <div class="circle-selector" title="Vetrobransko steklo">12</div>
-                                        <input type="checkbox" class="form-check-input" id="windshield" name="damage_areas[]" value="windshield">
-                                        <label class="form-check-label" for="windshield">Vetrobransko steklo</label>
-                                    </div>
-                                    <div class="form-check car-check">
-                                        <div class="circle-selector circle-13" title="Streha">13</div>
-                                        <input type="checkbox" class="form-check-input" id="roof" name="damage_areas[]" value="roof">
-                                        <label class="form-check-label" for="roof">Streha</label>
-                                    </div>
-                                    <div class="form-check car-check">
-                                        <div class="circle-selector circle-14" title="Zadaj">14</div>
-                                        <input type="checkbox" class="form-check-input" id="rear" name="damage_areas[]" value="rear">
-                                        <label class="form-check-label" for="rear">Zadaj</label>
-                                    </div>
-                                    <div style="margin-top: 20px;">
-                                        <div class="form-check car-check">
-                                            <input type="checkbox" class="form-check-input" id="karoserija" name="damage_areas[]" value="buildUp">
-                                            <label class="form-check-label" for="karoserija">Karoserija</label>
+                                        <div style="margin-top: 20px;">
+                                            <div class="form-check car-check">
+                                                <input type="checkbox" class="form-check-input" id="karoserija" name="damage_areas[]" value="buildUp">
+                                                <label class="form-check-label" for="karoserija">Karoserija</label>
+                                            </div>
+                                            <div class="form-check car-check">
+                                                <input type="checkbox" class="form-check-input" id="notranjost" name="damage_areas[]" value="interior">
+                                                <label class="form-check-label" for="notranjost">Notranjost</label>
+                                            </div>
+                                            <div class="form-check car-check">
+                                                <input type="checkbox" class="form-check-input" id="ogenj" name="damage_areas[]" value="fireDamage">
+                                                <label class="form-check-label" for="ogenj">Ogenj</label>
+                                            </div>
+                                            <div class="form-check car-check">
+                                                <input type="checkbox" class="form-check-input" id="oldParts" name="damage_areas[]" value="oldParts">
+                                                <label class="form-check-label" for="oldParts">Stari deli</label>
+                                            </div>
                                         </div>
-                                        <div class="form-check car-check">
-                                            <input type="checkbox" class="form-check-input" id="notranjost" name="damage_areas[]" value="interior">
-                                            <label class="form-check-label" for="notranjost">Notranjost</label>
-                                        </div>
-                                        <div class="form-check car-check">
-                                            <input type="checkbox" class="form-check-input" id="ogenj" name="damage_areas[]" value="fireDamage">
-                                            <label class="form-check-label" for="ogenj">Ogenj</label>
-                                        </div>
-                                        <div class="form-check car-check">
-                                            <input type="checkbox" class="form-check-input" id="oldParts" name="damage_areas[]" value="oldParts">
-                                            <label class="form-check-label" for="oldParts">Stari deli</label>
-                                        </div>
-                                    </div>
 
+                                    </div>
                                 </div>
-                            </div>
+                                <div>
+                                    <button type="submit" class="btn btn-primary">Potrdi</button>
+                                </div>
+                            </form>
                         </section>
                     </div>
                 </div>

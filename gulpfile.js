@@ -69,7 +69,8 @@ gulp.task('minify', () => {
       compress: false
     })))
     .pipe(gulpif('*.css', cleanCSS({
-      specialComments : 0
+      specialComments : 0,
+      inline: ['none']
     })))
     .pipe(gulp.dest(gulp.sources.dist));
 });
