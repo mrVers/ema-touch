@@ -94,6 +94,34 @@ body {
 
     .form-check {
       margin-bottom: 8px;
+
+      &.car-check {
+        padding-left: 60px;
+
+        .circle-selector {
+          height: 30px;
+          width: 30px;
+          background-color: #0091b3;
+          color: #fff;
+          border-radius: 40px;
+          text-align: center;
+          line-height: 30px;
+          position: absolute;
+          left: 0;
+
+          &.active {
+            background-color: #d06262;
+          }
+        }
+
+        .form-check-label {
+          line-height: 30px;
+        }
+
+        .form-check-input {
+          margin-top: 8px;
+        }
+      }
     }
 
     .form-group {
@@ -583,4 +611,169 @@ body {
 
 .dropdown-menu {
   border-radius: 0;
+}
+
+.car-container {
+  position: relative;
+  .car-image {
+    width: 100%;
+    position: relative;
+    height: 154px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    &.car-image-front {
+      background-image: url('../images/avto_spredaj.jpg');
+    }
+
+    &.car-image-rear {
+      background-image: url('../images/avto_zadaj.jpg');
+    }
+
+    &.car-image-left {
+      background-image: url('../images/avto_leva.jpg');
+    }
+
+    &.car-image-right {
+      background-image: url('../images/avto_desna.jpg');
+    }
+
+    &.car-image-top {
+      background-image: url('../images/avto_zgoraj.jpg');
+    }
+  }
+
+  .car-selector {
+    position: relative;
+    margin: 0 auto;
+
+    .circle-selector {
+      height: 30px;
+      width: 30px;
+      background-color: #0091b3;
+      color: #fff;
+      border-radius: 40px;
+      text-align: center;
+      line-height: 30px;
+      position: absolute;
+      border: 10px solid transparent;
+      box-sizing: initial;
+      background-clip: padding-box;
+      cursor: pointer;
+      transition: background-color ease-in-out 0.1s;
+
+      &:hover, &.active {
+        background-color: #d06262;
+      }
+
+      &.circle-1 {
+        top: 60px;
+        left: 10px;
+      }
+
+      &.circle-2 {
+        top: 60px;
+        right: 10px;
+      }
+
+      &.circle-3 {
+        top: 60px;
+        left: 11%;
+      }
+
+      &.circle-4 {
+        top: 60px;
+        left: 33%;
+      }
+
+      &.circle-5 {
+        top: 60%;
+        left: 52%;
+      }
+
+      &.circle-6 {
+        top: 60px;
+        left: 10px;
+      }
+
+      &.circle-7 {
+        top: 60px;
+        right: 10px;
+      }
+
+      &.circle-8 {
+        top: 9%;
+        left: 30%;
+      }
+
+      &.circle-9 {
+        top: 60px;
+        left: 50%;
+      }
+
+      &.circle-10 {
+        top: 50px;
+        left: 0;
+
+        @media screen and (max-width: 500px) {
+          left: -20px;
+        }
+
+      }
+
+      &.circle-11 {
+        top: 50px;
+        left: 10%;
+      }
+
+      &.circle-12 {
+        top: 50px;
+        left: 29%;
+      }
+
+      &.circle-13 {
+        top: 50px;
+        left: 50%;
+      }
+
+      &.circle-14 {
+        top: 50px;
+        right: 0;
+
+        @media screen and (max-width: 500px) {
+          right: -20px;
+        }
+      }
+
+    }
+
+  }
+
+  &.car-front, &.car-rear {
+    .car-selector {
+      max-width: 200px;
+    }
+  }
+
+  &.car-left, &.car-right {
+    .car-selector {
+      max-width: 477px;
+    }
+  }
+
+  &.car-top {
+    .car-selector {
+      max-width: 440px;
+    }
+  }
+}
+
+.car-title {
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 10px 20px;
+  letter-spacing: 0.8px;
+  font-size: 14px;
+  text-align: center;
 }
