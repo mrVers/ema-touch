@@ -56,6 +56,7 @@
   .header-top-actions {
     display: flex;
     align-items: center;
+    padding: 0 20px;
   }
 
   .dropdown {
@@ -69,7 +70,6 @@
   }
 
   .header-top-action-dropdown-menu {
-    padding: 0 30px;
 
     .top-link-item {
       display: inline-block;
@@ -89,8 +89,8 @@
       padding: 0;
     }
 
-    i {
-      font-size: 2rem;
+    .et-icon {
+      font-size: 40px;
       color: #fff;
     }
   }
