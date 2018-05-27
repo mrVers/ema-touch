@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?c1mtsh');
-  src:  url('fonts/icomoon.eot?c1mtsh#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?c1mtsh') format('truetype'),
-    url('fonts/icomoon.woff?c1mtsh') format('woff'),
-    url('fonts/icomoon.svg?c1mtsh#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?dmnrsa');
+  src:  url('fonts/icomoon.eot?dmnrsa#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?dmnrsa') format('truetype'),
+    url('fonts/icomoon.woff?dmnrsa') format('woff'),
+    url('fonts/icomoon.svg?dmnrsa#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,20 +24,89 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-Ikona_administracija:before {
+  content: "\e904";
+}
+.icon-Ikona_domov:before {
+  content: "\e908";
+}
+.icon-Ikona_EC2:before {
+  content: "\e909";
+}
+.icon-Ikona_EC3:before {
+  content: "\e90a";
+}
+.icon-Ikona_ERE:before {
+  content: "\e90b";
+}
+.icon-Ikona_EVA:before {
+  content: "\e90c";
+}
+.icon-Ikona_FOR:before {
+  content: "\e90d";
+}
+.icon-Ikona_izberi:before {
+  content: "\e90e";
+}
+.icon-Ikona_komentar:before {
+  content: "\e90f";
+}
+.icon-Ikona_MON:before {
+  content: "\e910";
+}
+.icon-Ikona_MPC:before {
+  content: "\e911";
+}
+.icon-Ikona_naprej:before {
+  content: "\e912";
+}
+.icon-Ikona_nazaj:before {
+  content: "\e913";
+}
+.icon-Ikona_natisni:before {
+  content: "\e914";
+}
+.icon-Ikona_nova-datoteka:before {
+  content: "\e915";
+}
+.icon-Ikona_poslji:before {
+  content: "\e916";
+}
+.icon-Ikona_predogled-kalkulacije:before {
+  content: "\e917";
+}
+.icon-Ikona_predogled-zapisnika:before {
+  content: "\e918";
+}
+.icon-Ikona_shrani:before {
+  content: "\e919";
+}
+.icon-Ikona_tisk-kalkulacije:before {
+  content: "\e91a";
+}
+.icon-Ikona_tisk-zapisnika:before {
+  content: "\e91b";
+}
+.icon-Ikona_TLM:before {
+  content: "\e91c";
+}
+.icon-Ikona_zakljuci:before {
+  content: "\e91d";
+}
 .icon-Ikona_kopiraj:before {
   content: "\e900";
 }
-.icon-Ikona_predogled-kalkulacije:before {
+.icon-Ikona_predogled-kalkulacije2:before {
   content: "\e901";
 }
-.icon-Ikona_predogled-zapisnika:before {
+.icon-Ikona_predogled-zapisnika2:before {
   content: "\e902";
 }
-.icon-Ikona_tisk-kalkulacije:before {
+.icon-Ikona_tisk-kalkulacije2:before {
   content: "\e903";
 }
-.icon-Ikona_tisk-zapisnika:before {
-  content: "\e904";
+.icon-Ikona_tisk-zapisnika2:before {
+  content: "\1f5fd";
 }
 .icon-Ikona_uporabnik:before {
   content: "\e905";

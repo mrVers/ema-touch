@@ -1,7 +1,5 @@
 (function () {
-  'use strict';
   window.addEventListener('load', function () {
-
 
     // Fetch all the forms we want to apply custom Bootstrap validation styles to
     var forms = document.getElementsByClassName('needs-validation');
@@ -38,6 +36,30 @@
       });
 
     $('#table_id').DataTable();
+
+    // slideout hamburger meni
+    var slideout = new Slideout({
+      'panel': document.getElementById('main-wrapper'),
+      'menu': document.getElementById('hamburger'),
+      'padding': 256,
+      'tolerance': 70
+    });
+
+    $('.hamburger-toggle-button').click(function () {
+      slideout.toggle();
+    });
+
+    $('.hamburger-toggle-close').click(function () {
+      slideout.close();
+    });
+
+    window.addEventListener('resize', function (){
+      var width = $(window).width();
+      // force close hamburger on large screen
+      if (width > 991) {
+        slideout.close();
+      }
+    }, true);
 
   }, false);
 })();

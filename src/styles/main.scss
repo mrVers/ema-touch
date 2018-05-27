@@ -67,6 +67,14 @@ body {
   }
 }
 
+.wrapper {
+  .main-container {
+    .container-fluid {
+      background-color: #e9ebeb;
+    }
+  }
+}
+
 .main-content-wrapper {
   box-shadow: 3px 5px 15px 6px #2a363b0c;
   width: 100%;
@@ -776,4 +784,111 @@ body {
   letter-spacing: 0.8px;
   font-size: 14px;
   text-align: center;
+}
+
+
+.slideout-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  width: 256px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: none;
+}
+
+.slideout-panel {
+  position: relative;
+  z-index: 1070;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+  display: block;
+}
+
+.hamburger-menu {
+  background-color: #0091b3;
+  display: none;
+  color: #fff;
+  padding: 40px 0;
+
+  @media only screen and (min-width: 992px) {
+    // display: none !important;
+  }
+
+  .hamburger-toggle-close {
+    display: block;
+    position: fixed;
+    color: #fff;
+    z-index: 10;
+    left: 210px;
+    top: 20px;
+    cursor: pointer;
+
+    .oi {
+      font-size: 18px;
+      color: #fff;
+    }
+  }
+
+  .hamburger-title {
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #68bcd4;
+    font-size: 18px;
+  }
+
+  .nav {
+    margin-bottom: 15px;
+    .nav-link {
+      color: #fff;
+
+      &:hover, &.active {
+        background-color: #68bcd4;
+      }
+
+      &.disabled {
+        color: #afb6bd;
+        cursor: initial;
+        pointer-events: none;
+      }
+    }
+  }
+}
+
+.hamburger-toggle-button {
+  display: none;
+  position: fixed;
+  color: #4a4a4a;
+  z-index: 10;
+  left: 20px;
+  top: 40px;
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 50px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+
+  .oi {
+    font-size: 16px;
+    margin: 0;
+    color: #4a4a4a;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .hamburger-toggle-button {
+    display: block !important;
+  }
 }

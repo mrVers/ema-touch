@@ -30,6 +30,10 @@
     right: 0;
   }
 
+  @media screen and (max-width: 767px){
+    height: 200px;
+  }
+
 }
 
 .header-top-content {
@@ -39,18 +43,20 @@
   .header-logo {
     position: relative;
     padding: 0 20px;
-    width: 220px;
+    width: 180px;
 
     a {
       line-height: 70px;
     }
 
     .top-logo {
-      width: 100%;
+      width: 180px;
     }
 
-    @media screen and (max-width: 550px){
+    @media screen and (max-width: 767px){
       padding: 0;
+      margin: 0 auto;
+      text-align: center;
     }
   }
   .header-top-actions {
@@ -75,17 +81,14 @@
       display: inline-block;
     }
 
-    @media screen and (max-width: 550px){
-      display: none;
-    }
-
   }
 
   .header-top-action-avatar-menu {
     padding: 0 30px;
     z-index: 5;
+    position: relative;
 
-    @media screen and (max-width: 550px){
+    @media screen and (max-width: 767px){
       padding: 0;
     }
 

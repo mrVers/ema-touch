@@ -9,7 +9,7 @@
     @@include('../layouts/styles.html')
 </head>
 <body>
-<div class="wrapper">
+<div class="wrapper" id="main-wrapper">
     <section class="main-container">
         <!-- include header.html -->
         @@include('../layouts/header.html')
@@ -212,6 +212,9 @@
     <!-- include footer.html -->
     @@include('../layouts/footer.html')
 </div>
+
+<!-- include hamburger sidebar -->
+@@include('../partials/ema-mobile-sidebar.html')
 
 <!-- include scripts.html -->
 @@include('../layouts/scripts.html')
