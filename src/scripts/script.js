@@ -37,29 +37,62 @@
 
     $('#table_id').DataTable();
 
+
     // slideout hamburger meni
-    var slideout = new Slideout({
-      'panel': document.getElementById('main-wrapper'),
-      'menu': document.getElementById('hamburger'),
-      'padding': 256,
-      'tolerance': 70
-    });
+    if (document.getElementById('hamburger')) {
 
-    $('.hamburger-toggle-button').click(function () {
-      slideout.toggle();
-    });
+      var slideout = new Slideout({
+        'panel': document.getElementById('main-wrapper'),
+        'menu': document.getElementById('hamburger'),
+        'padding': 256,
+        'tolerance': 70
+      });
 
-    $('.hamburger-toggle-close').click(function () {
-      slideout.close();
-    });
+      $('.hamburger-toggle-button').click(function () {
+        slideout.toggle();
+      });
 
-    window.addEventListener('resize', function (){
-      var width = $(window).width();
-      // force close hamburger on large screen
-      if (width > 991) {
+      $('.hamburger-toggle-close').click(function () {
         slideout.close();
-      }
-    }, true);
+      });
+
+      // hamburger meni window resize listener
+      window.addEventListener('resize', function () {
+        var width = $(window).width();
+        // force close hamburger on large screen
+        if (width > 991) {
+          slideout.close();
+        }
+      }, true);
+
+    }
+
+    var loader = '<div class="btn-loader">' +
+      '<div class="btn-loader-el-1"></div>' +
+      '<div class="btn-loader-el-2"></div>' +
+      '<div class="btn-loader-el-3"></div>' +
+      '<div class="btn-loader-el-4"></div>' +
+      '</div>';
+
+    // button loader example
+    $('form').submit(function (event) {
+      var self = $(this);
+      event.preventDefault();
+      self.children('button[type=submit]').prop('disabled', true);
+      self.children('button[type=submit]').append(loader);
+      self.children('button[type=submit]').addClass('loading');
+
+      setTimeout(function(){
+        self.children('button[type=submit]').removeClass('loading');
+        self.children('button[type=submit]').find('.btn-loader').remove();
+        self.children('button[type=submit]').prop('disabled', false);
+        // if (self.checkValidity() === true) {
+          self.unbind('submit').submit();
+        // }
+      }, 2000);
+
+    });
+
 
   }, false);
 })();

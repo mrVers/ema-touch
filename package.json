@@ -42,6 +42,7 @@
     "bootstrap": "^4.1.1",
     "bootstrap-datepicker": "^1.8.0",
     "datatables.net": "^1.10.16",
+    "datatables.net-bs4": "^1.10.16",
     "datatables.net-dt": "^1.10.16",
     "jquery": "^3.1.1",
     "popper.js": "^1.14.3",

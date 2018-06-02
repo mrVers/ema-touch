@@ -29,6 +29,35 @@
     right: 0;
   }
 
+  .container-fluid {
+    background-color: transparent !important;
+
+    .btn {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .background-dots {
+    background-image: url(../images/eurotax_dots_big.png);
+    background-position: 30% 50%;
+    background-size: 240px;
+    background-repeat: no-repeat;
+    height: 100%;
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    @media screen and (max-width: 767px) {
+      background-position: -10% 20%;
+      background-size: 260px;
+    }
+  }
+
 }
 
 .login-wrapper {
@@ -47,6 +76,12 @@
     display: block;
     padding: 0 0 20px;
     width: 200px;
+  }
+
+  .sava-logo-login {
+    display: block;
+    padding: 20px 0 0;
+    width: 150px;
   }
 
 }
