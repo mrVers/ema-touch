@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="sl-SI">
+<head>
+    <!-- include head.html -->
+    @@include('../layouts/head.html', {
+    "title": "Dashboard"
+    })
+    <!-- include styles.html -->
+    @@include('../layouts/styles.html')
+</head>
+<body>
+<div class="wrapper" id="main-wrapper">
+    <section class="main-container dashboard">
+        <!-- include header.html -->
+        @@include('../layouts/header.html')
+        <div class="container-fluid">
+            <div class="row no-gutters">
+                <div class="col-lg-2 main-sidebar">
+                    <!-- include dashboard-sidebar -->
+                    @@include('../partials/dashboard-sidebar.html')
+                </div>
+                <div class="col-lg-8 main-column">
+                    <div class="main-content-wrapper">
+                        <section class="main-content-container">
+                            <div class="main-content-navigation">
+                                <nav class="nav">
+                                    <a class="nav-link active">Moje datoteke</a>
+                                    <a class="nav-link">Poslane datoteke</a>
+                                    <a class="nav-link">Vse datoteke</a>
+                                </nav>
+                                <div class="form-group main-content-select">
+                                    <i class="oi oi-chevron-bottom"></i>
+                                    <select id="carType" name="carType" class="form-control">
+                                        <option value="" selected>Odprte</option>
+                                        <option value="">Zaprte</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="table-responsive dashboard-table">
+                                        <table id="table_id" class="table table-sm table-bordered table-hover table-striped">
+                                            <thead>
+                                                <tr>
+                                                <th scope="col">Market</th>
+                                                <th scope="col">Id</th>
+                                                <th scope="col">Znamka</th>
+                                                <th scope="col">Tip</th>
+                                                <th scope="col">E-koda</th>
+                                                <th scope="col">Reg.</th>
+                                                <th scope="col">Šasija</th>
+                                                <th scope="col">Ustvaril</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>SI</td>
+                                                <td>356711</td>
+                                                <td>Audi (D)</td>
+                                                <td>A1 1,4 TFSI Attraction</td>
+                                                <td>000-0000 0000</td>
+                                                <td>KP 23-SN8</td>
+                                                <td>33232 2321122 232333</td>
+                                                <td>Marko Groselj</td>
+                                            </tr>
+                                            <tr>
+                                                <td>SI</td>
+                                                <td>356711</td>
+                                                <td>Audi (D)</td>
+                                                <td>A1 1,4 TFSI Attraction</td>
+                                                <td>000-0000 0000</td>
+                                                <td>KP 23-SN8</td>
+                                                <td>33232 2321122 232333</td>
+                                                <td>Marko Groselj</td>
+                                            </tr>
+                                            <tr>
+                                                <td>SI</td>
+                                                <td>356711</td>
+                                                <td>Audi (D)</td>
+                                                <td>A1 1,4 TFSI Attraction</td>
+                                                <td>000-0000 0000</td>
+                                                <td>KP 23-SN8</td>
+                                                <td>33232 2321122 232333</td>
+                                                <td>Marko Groselj</td>
+                                            </tr>
+                                            <tr>
+                                                <td>SI</td>
+                                                <td>356711</td>
+                                                <td>Audi (D)</td>
+                                                <td>A1 1,4 TFSI Attraction</td>
+                                                <td>000-0000 0000</td>
+                                                <td>KP 23-SN8</td>
+                                                <td>33232 2321122 232333</td>
+                                                <td>Marko Groselj</td>
+                                            </tr>
+                                            <tr>
+                                                <td>SI</td>
+                                                <td>356711</td>
+                                                <td>Audi (D)</td>
+                                                <td>A1 1,4 TFSI Attraction</td>
+                                                <td>000-0000 0000</td>
+                                                <td>KP 23-SN8</td>
+                                                <td>33232 2321122 232333</td>
+                                                <td>Marko Groselj</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="col-lg-2 right-column">
+                    <div class="main-content-wrapper">
+                        <section class="main-content-container">
+                            <h1>Obvestila</h1>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- include footer.html -->
+    @@include('../layouts/footer.html')
+</div>
+
+<!-- include hamburger sidebar -->
+@@include('../partials/dashboard-mobile-sidebar.html')
+
+<!-- include scripts.html -->
+@@include('../layouts/scripts.html')
+</body>
+</html>
