@@ -133,7 +133,7 @@ body {
       }
 
       .container-main-wrapper {
-        margin-top: 250px;
+        padding-top: 250px;
 
         .inner-container {
           margin-left: 250px;
@@ -351,6 +351,10 @@ body {
   position: relative;
   margin-bottom: 10px;
 
+  .narrow-data & {
+    margin-bottom: 0;
+  }
+
   label:not(.form-check-label) {
     color: #2a363b;
     font-size: 14px;
@@ -513,6 +517,24 @@ body {
   }
 }
 
+.btn-with-icon {
+  box-shadow: none;
+  margin-top: 0 !important;
+  padding: 0 5px;
+
+  &:active {
+    background-color: #f2f2f2;
+  }
+
+  .btn-icon {
+    font-size: 36px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+}
+
+
+
 .modal {
 
   .modal-header {
@@ -668,6 +690,10 @@ table.table-bordered.dataTable tbody th, table.table-bordered.dataTable tbody td
   img {
     width: 100%;
   }
+
+  .dashboard-car-data & {
+    margin-bottom: 20px;
+  }
 }
 
 .car-data {
@@ -768,6 +794,13 @@ table.table-bordered.dataTable tbody th, table.table-bordered.dataTable tbody td
     .upload-file-type-name {
       display: inline-block;
       font-size: 14px;
+    }
+
+    .upload-file-delete {
+      display: inline-block;
+      font-size: 14px;
+      padding: 10px;
+      cursor: pointer;
     }
   }
 }
@@ -1251,6 +1284,7 @@ table.table-bordered.dataTable tbody th, table.table-bordered.dataTable tbody td
 }
 
 .main-content-navigation {
+  margin-bottom: 40px;
   nav {
     display: inline-flex;
     border: 1px solid #e6e5e4;
@@ -1262,6 +1296,7 @@ table.table-bordered.dataTable tbody th, table.table-bordered.dataTable tbody td
       padding: 5px 20px;
       cursor: pointer;
       font-size: 14px;
+      color: #2a363b;
 
       &:last-child {
         border-right: none;
@@ -1368,6 +1403,45 @@ table.table-bordered.dataTable tbody th, table.table-bordered.dataTable tbody td
     .side-notification-read-more {
       font-size: 14px;
       display: inline-block;
+    }
+  }
+}
+
+.equipment-wrapper {
+  .equipment-title {
+    color: #2a363b;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+
+  }
+
+  .equipment-list {
+    margin-bottom: 20px;
+    margin-left: 0;
+    padding: 0;
+
+    .equipment-list-item {
+      list-style-type: none;
+      margin-bottom: 5px;
+
+      .equipment-list-text {
+        display: inline-block;
+        font-weight: 300;
+        font-size: 15px;
+        margin-bottom: 0;
+      }
+      .equipment-list-delete {
+        font-size: 12px;
+        margin-left: 20px;
+        text-decoration: underline;
+        cursor: pointer;
+
+        &:hover {
+          color: #575757;
+        }
+      }
     }
   }
 }

@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="sl-SI">
+<head>
+    <!-- include head.html -->
+    @@include('../layouts/head.html', {
+    "title": "Dashboard"
+    })
+    <!-- include styles.html -->
+    @@include('../layouts/styles.html')
+</head>
+<body>
+<div class="wrapper" id="main-wrapper">
+    <section class="main-container dashboard">
+        <!-- include header.html -->
+        @@include('../layouts/header.html')
+        <div class="container-main-wrapper">
+            <!-- include dashboard-sidebar -->
+            @@include('../partials/dashboard-sidebar.html')
+            <div class="inner-container">
+                <div class="container-fluid">
+                    <div class="row no-gutters">
+                        <div class="col-lg-8 main-column">
+                            <div class="main-content-wrapper">
+                                <section class="main-content-container">
+                                    <h1>Datoteka</h1>
+                                    <div class="main-content-navigation">
+                                        <nav class="nav">
+                                            <a class="nav-link" href="dashboard.file.html">Vozilo</a>
+                                            <a class="nav-link" href="dashboard.gear.html">Oprema</a>
+                                            <a class="nav-link active" href="dashboard.owner.html">Lastnik</a>
+                                            <a class="nav-link" href="dashboard.attachments.html">Priloge</a>
+                                            <a class="nav-link" href="dashboard.technical.html">Dodatni tehnični podatki</a>
+                                        </nav>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="copy-fields">
+                                                <button class="btn copy-btn">
+                                                    <span class="btn-icon"><span class="et-icon icon-Ikona_kopiraj"></span></span>
+                                                    Izpolni lastnika
+                                                </button>
+                                            </div>
+                                            <form class="needs-validation" novalidate="">
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <label for="podjetje">Podjetje</label>
+                                                            <input type="text" class="form-control" name="podjetje" id="podjetje" required="">
+                                                            <div class="valid-check"><span class="oi oi-check"></span></div>
+                                                            <div class="invalid-feedback">
+                                                                Polje je zahtevano.
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="nameSurname">Ime in priimek</label>
+                                                            <input type="text" class="form-control" name="nameSurname" id="nameSurname" required="">
+                                                            <div class="valid-check"><span class="oi oi-check"></span></div>
+                                                            <div class="invalid-feedback">
+                                                                Polje je zahtevano.
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="streetWithNumber">Ulica in hišna številka</label>
+                                                            <input type="text" class="form-control" name="streetWithNumber" id="streetWithNumber" required="">
+                                                            <div class="valid-check"><span class="oi oi-check"></span></div>
+                                                            <div class="invalid-feedback">
+                                                                Polje je zahtevano.
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-sm-5">
+                                                                <label for="postalNumber">Poštna številka</label>
+                                                                <input type="number" class="form-control" name="postalNumber" id="postalNumber" required="">
+                                                                <div class="valid-check"><span class="oi oi-check"></span></div>
+                                                                <div class="invalid-feedback">
+                                                                    Polje je zahtevano.
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group col-sm-7">
+                                                                <label for="postalName">Pošta</label>
+                                                                <input type="text" class="form-control" name="postalName" id="postalName" required="">
+                                                                <div class="valid-check"><span class="oi oi-check"></span></div>
+                                                                <div class="invalid-feedback">
+                                                                    Polje je zahtevano.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="country">Država</label>
+                                                            <input type="text" class="form-control" name="country" id="country" required="">
+                                                            <div class="valid-check"><span class="oi oi-check"></span></div>
+                                                            <div class="invalid-feedback">
+                                                                Polje je zahtevano.
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="vatID">Davčna številka</label>
+                                                            <input type="text" class="form-control" name="vatID" id="vatID" required="">
+                                                            <div class="valid-check"><span class="oi oi-check"></span></div>
+                                                            <div class="invalid-feedback">
+                                                                Polje je zahtevano.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <label for="email">Email</label>
+                                                            <input type="email" class="form-control" name="email" id="email" required="">
+                                                            <div class="valid-check"><span class="oi oi-check"></span></div>
+                                                            <div class="invalid-feedback">
+                                                                Polje je zahtevano.
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="mobileNumber">Mobilna številka</label>
+                                                            <input type="tel" class="form-control" name="mobileNumber" id="mobileNumber" required="">
+                                                            <div class="valid-check"><span class="oi oi-check"></span></div>
+                                                            <div class="invalid-feedback">
+                                                                Polje je zahtevano.
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="telNumber">Telefonska številka</label>
+                                                            <input type="tel" class="form-control" name="telNumber" id="telNumber" required="">
+                                                            <div class="valid-check"><span class="oi oi-check"></span></div>
+                                                            <div class="invalid-feedback">
+                                                                Polje je zahtevano.
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="faxNumber">Fax številka</label>
+                                                            <input type="tel" class="form-control" name="faxNumber" id="faxNumber" required="">
+                                                            <div class="valid-check"><span class="oi oi-check"></span></div>
+                                                            <div class="invalid-feedback">
+                                                                Polje je zahtevano.
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="comment">Opombe</label>
+                                                            <textarea class="form-control" id="comment" rows="3"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 right-column">
+                            <!-- include file history -->
+                            @@include('../partials/file-history.html')
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- include footer.html -->
+    @@include('../layouts/footer.html')
+</div>
+
+<!-- include hamburger sidebar -->
+@@include('../partials/dashboard-mobile-sidebar.html')
+
+<!-- include scripts.html -->
+@@include('../layouts/scripts.html')
+</body>
+</html>
