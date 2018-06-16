@@ -36,6 +36,41 @@
 
 }
 
+.header-background {
+  height: 270px;
+  position: fixed;
+  top: 0;
+
+  &:before {
+    background-color: rgba(42, 54, 59, 0.85);
+    height: inherit;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &:after {
+    background-image: url(../images/background.jpg);
+    background-position: center -180px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: inherit;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    left: 0;
+    right: 0;
+  }
+}
+
 .header-top-content {
   padding: 20px;
   display: flex;
@@ -97,4 +132,8 @@
       color: #fff;
     }
   }
+}
+
+.header-top-content-wrapper {
+  height: 220px;
 }

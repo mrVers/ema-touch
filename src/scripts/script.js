@@ -93,6 +93,10 @@
 
     });
 
+    $('.dashboard-table tr').click(function () {
+      window.location.href = '/dashboard.file.html';
+    });
+
 
   }, false);
 })();

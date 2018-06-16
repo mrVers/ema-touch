@@ -70,18 +70,18 @@ body {
     .nav-link {
       color: #2a363b;
       font-weight: 300;
-      border-left: 5px solid transparent;
+      border-left: 4px solid transparent;
       transition: color ease 0.1s;
       padding: 5px 0 0 10px;
       font-size: 15px;
 
       &:hover {
-        border-left: 5px solid #0091b3;
+        border-left: 4px solid #0091b3;
         color: #0091b3;
       }
 
       &.active {
-        border-left: 5px solid #0091b3;
+        border-left: 4px solid #0091b3;
       }
     }
 
@@ -110,7 +110,7 @@ body {
         display: flex;
         flex: 0 0 260px;
         max-width: 100%;
-        margin-left: -15px;
+        position: fixed;
       }
 
       .right-column {
@@ -118,12 +118,26 @@ body {
         flex: 0 0 340px;
         margin-top:  -30px;
         max-width: 100%;
-        padding: 0 0px 0 15px;
+        padding: 0 0 0 15px;
       }
       .main-column {
         display: flex;
         flex: 1;
         max-width: 100%;
+      }
+
+      .header-container {
+        position: fixed;
+        width: 100%;
+        top: 0;
+      }
+
+      .container-main-wrapper {
+        margin-top: 250px;
+
+        .inner-container {
+          margin-left: 250px;
+        }
       }
     }
   }
@@ -142,6 +156,10 @@ body {
 
     &.right-sidebar {
       padding: 30px 20px;
+
+      h1 {
+        font-size: 22px;
+      }
     }
 
     h1 {
@@ -1224,6 +1242,12 @@ table.table-bordered.dataTable tbody th, table.table-bordered.dataTable tbody td
   .row:first-child {
     display: none;
   }
+
+  .table {
+    tr {
+      cursor: pointer;
+    }
+  }
 }
 
 .main-content-navigation {
@@ -1237,6 +1261,7 @@ table.table-bordered.dataTable tbody th, table.table-bordered.dataTable tbody td
       transition: background-color ease 0.1s;
       padding: 5px 20px;
       cursor: pointer;
+      font-size: 14px;
 
       &:last-child {
         border-right: none;
@@ -1252,19 +1277,23 @@ table.table-bordered.dataTable tbody th, table.table-bordered.dataTable tbody td
     margin-left: 15px;
 
     select.form-control:not([size]):not([multiple]) {
-      padding: 7px 42px 6px 16px;
-      height: 36px;
+      padding: 5px 42px 5px 16px;
+      height: inherit;
+      font-size: 14px;
+    }
+    .oi {
+      top: 10px;
     }
   }
 }
 
-.side-notifications {
+.side-history {
   width: 100%;
   margin-top: -20px;
-  .side-notification-item {
+  .side-history-item {
     border-bottom: 1px solid #aaa;
 
-    .side-notification-item-data {
+    .side-history-item-data {
       padding: 20px 0;
       h3 {
         font-size: 16px;
@@ -1278,13 +1307,13 @@ table.table-bordered.dataTable tbody th, table.table-bordered.dataTable tbody td
       }
     }
 
-    .side-notification-item-value {
+    .side-history-item-value {
       padding: 20px 0;
       font-weight: 600;
       text-align: right;
     }
 
-    .side-notification-item-action {
+    .side-history-item-action {
       padding: 20px 0;
       width: 45px;
       text-align: right;
@@ -1292,6 +1321,53 @@ table.table-bordered.dataTable tbody th, table.table-bordered.dataTable tbody td
         cursor: pointer;
         font-size: 28px;
       }
+    }
+  }
+}
+
+.side-notifications {
+  width: 100%;
+  margin-top: -20px;
+
+  .side-notification-item {
+    display: block;
+    border-bottom: 1px solid #aaa;
+    padding: 14px 0;
+
+    .side-notification-item-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+
+      .side-notification-item-tag {
+        font-size: 12px;
+        text-transform: uppercase;
+        margin-bottom: 6px;
+
+        &.tag-admin {
+          color: red;
+        }
+
+        &.tag-user {
+          color: #0091b3;
+        }
+
+        &.tag-notice {
+          color: #111;
+        }
+      }
+      .side-notification-item-date {
+        font-size: 12px;
+      }
+    }
+
+    .side-notification-text {
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+    .side-notification-read-more {
+      font-size: 14px;
+      display: inline-block;
     }
   }
 }

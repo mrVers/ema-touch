@@ -13,151 +13,40 @@
     <section class="main-container dashboard">
         <!-- include header.html -->
         @@include('../layouts/header.html')
-        <div class="container-fluid">
-            <div class="row no-gutters">
-                <div class="col-lg-2 main-sidebar">
-                    <!-- include dashboard-sidebar -->
-                    @@include('../partials/dashboard-sidebar.html')
-                </div>
-                <div class="col-lg-8 main-column">
-                    <div class="main-content-wrapper">
-                        <section class="main-content-container">
-                            <div class="main-content-navigation">
-                                <nav class="nav">
-                                    <a class="nav-link active">Moje datoteke</a>
-                                    <a class="nav-link">Poslane datoteke</a>
-                                    <a class="nav-link">Vse datoteke</a>
-                                </nav>
-                                <div class="form-group main-content-select">
-                                    <i class="oi oi-chevron-bottom"></i>
-                                    <select id="carType" name="carType" class="form-control">
-                                        <option value="" selected>Odprte</option>
-                                        <option value="">Zaprte</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="table-responsive dashboard-table">
-                                        <table id="table_id" class="table table-sm table-bordered table-hover table-striped">
-                                            <thead>
-                                            <tr>
-                                                <th scope="col">Market</th>
-                                                <th scope="col">Id</th>
-                                                <th scope="col">Znamka</th>
-                                                <th scope="col">Tip</th>
-                                                <th scope="col">E-koda</th>
-                                                <th scope="col">Reg.</th>
-                                                <th scope="col">Šasija</th>
-                                                <th scope="col">Ustvaril</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr>
-                                                <td>SI</td>
-                                                <td>356711</td>
-                                                <td>Audi (D)</td>
-                                                <td>A1 1,4 TFSI Attraction</td>
-                                                <td>000-0000 0000</td>
-                                                <td>KP 23-SN8</td>
-                                                <td>33232 2321122 232333</td>
-                                                <td>Marko Groselj</td>
-                                            </tr>
-                                            <tr>
-                                                <td>SI</td>
-                                                <td>356711</td>
-                                                <td>Audi (D)</td>
-                                                <td>A1 1,4 TFSI Attraction</td>
-                                                <td>000-0000 0000</td>
-                                                <td>KP 23-SN8</td>
-                                                <td>33232 2321122 232333</td>
-                                                <td>Marko Groselj</td>
-                                            </tr>
-                                            <tr>
-                                                <td>SI</td>
-                                                <td>356711</td>
-                                                <td>Audi (D)</td>
-                                                <td>A1 1,4 TFSI Attraction</td>
-                                                <td>000-0000 0000</td>
-                                                <td>KP 23-SN8</td>
-                                                <td>33232 2321122 232333</td>
-                                                <td>Marko Groselj</td>
-                                            </tr>
-                                            <tr>
-                                                <td>SI</td>
-                                                <td>356711</td>
-                                                <td>Audi (D)</td>
-                                                <td>A1 1,4 TFSI Attraction</td>
-                                                <td>000-0000 0000</td>
-                                                <td>KP 23-SN8</td>
-                                                <td>33232 2321122 232333</td>
-                                                <td>Marko Groselj</td>
-                                            </tr>
-                                            <tr>
-                                                <td>SI</td>
-                                                <td>356711</td>
-                                                <td>Audi (D)</td>
-                                                <td>A1 1,4 TFSI Attraction</td>
-                                                <td>000-0000 0000</td>
-                                                <td>KP 23-SN8</td>
-                                                <td>33232 2321122 232333</td>
-                                                <td>Marko Groselj</td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
+        <div class="container-main-wrapper">
+            <!-- include dashboard-sidebar -->
+            @@include('../partials/dashboard-sidebar.html')
+            <div class="inner-container">
+                <div class="container-fluid">
+                    <div class="row no-gutters">
+                        <div class="col-lg-8 main-column">
+                            <div class="main-content-wrapper">
+                                <section class="main-content-container">
+                                    <h1>Datoteka</h1>
+                                    <div class="main-content-navigation">
+                                        <nav class="nav">
+                                            <a class="nav-link active">Vozilo</a>
+                                            <a class="nav-link">Oprema</a>
+                                            <a class="nav-link">Lastnik</a>
+                                            <a class="nav-link">Priloge</a>
+                                            <a class="nav-link">Dodatni tehnični podatki</a>
+                                        </nav>
                                     </div>
-                                </div>
+                                    <div class="row">
+                                        <div class="col-md-12"></div>
+                                    </div>
+                                </section>
                             </div>
-                        </section>
-                    </div>
-                </div>
-                <div class="col-lg-2 right-column">
-                    <div class="main-content-wrapper">
-                        <section class="main-content-container right-sidebar">
-                            <h1>Obvestila</h1>
-                            <table class="side-notifications">
-                                <tr class="side-notification-item">
-                                    <td class="side-notification-item-data">
-                                        <h3>Marko Groselj</h3>
-                                        <span>ERE 13.6.2018</span>
-                                    </td>
-                                    <td class="side-notification-item-value">
-                                        20.079 EUR
-                                    </td>
-                                    <td class="side-notification-item-action">
-                                        <span class="side-icon icon-Ikona_tisk-kalkulacije"></span>
-                                    </td>
-                                </tr>
-                                <tr class="side-notification-item">
-                                    <td class="side-notification-item-data">
-                                        <h3>Anita Likovnik</h3>
-                                        <span>ERE 13.6.2018</span>
-                                    </td>
-                                    <td class="side-notification-item-value">
-                                        2.079 EUR
-                                    </td>
-                                    <td class="side-notification-item-action">
-                                        <span class="side-icon icon-Ikona_tisk-kalkulacije"></span>
-                                    </td>
-                                </tr>
-                                <tr class="side-notification-item">
-                                    <td class="side-notification-item-data">
-                                        <h3>Vasilij Zbogar Cetic</h3>
-                                        <span>ERE 13.6.2018</span>
-                                    </td>
-                                    <td class="side-notification-item-value">
-                                        20.079 EUR
-                                    </td>
-                                    <td class="side-notification-item-action">
-                                        <span class="side-icon icon-Ikona_tisk-kalkulacije"></span>
-                                    </td>
-                                </tr>
-                            </table>
-                        </section>
+                        </div>
+                        <div class="col-lg-2 right-column">
+                            <!-- include file history -->
+                            @@include('../partials/file-history.html')
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </section>
 
     <!-- include footer.html -->
