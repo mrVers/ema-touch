@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="sl-SI">
+<head>
+    <!-- include head.html -->
+    @@include('../layouts/head.html', {
+    "title": "Dashboard"
+    })
+    <!-- include styles.html -->
+    @@include('../layouts/styles.html')
+</head>
+<body>
+<div class="wrapper" id="main-wrapper">
+    <section class="main-container dashboard">
+        <!-- include header.html -->
+        @@include('../layouts/header.html', {
+        "is-present": "d-block",
+        "title": "Vrednost rabljenega vozila"
+        })
+        <div class="container-main-wrapper">
+            <!-- include dashboard-sidebar -->
+            @@include('../partials/dashboard-sidebar.html')
+            <div class="inner-container">
+                <div class="container-fluid">
+                    <div class="row no-gutters">
+                        <div class="col-lg-8 main-column">
+                            <div class="main-content-wrapper">
+                                <section class="main-content-container add-remove-value-model">
+                                    <h1>Ford Fiesta 1,1 Trend (08/2017 - ) <span class="content-title-tag" title="Oznaka datoteke">890</span></h1>
+                                    <div class="main-content-navigation">
+                                        <nav class="nav">
+                                            <a class="nav-link" href="module.index.html">Vrednotenje</a>
+                                            <a class="nav-link active" href="module.decrease-value.html">Zmanjšanje vrednosti</a>
+                                            <a class="nav-link" href="#">Povečanje vrednosti</a>
+                                        </nav>
+                                    </div>
+                                    <div class="row add-remove-value-title">
+                                        <div class="col-6">
+                                            <label class="label">Naziv</label>
+                                        </div>
+                                        <div class="col-3">
+                                            <label class="label">Znesek</label>
+                                        </div>
+                                        <div class="col-3">
+                                            <label class="label">Odbitek pri prodaji</label>
+                                        </div>
+                                    </div>
+                                    <div class="add-remove-value-data">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p>
+                                                    <span class="data-value">Poskodba desnega odbijaca</span>
+                                                    <span class="remove-data">Odstrani</span>
+                                                </p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p>100 EUR</p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p>1 %</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p>
+                                                    <span class="data-value">Kilometrina</span>
+                                                    <span class="remove-data">Odstrani</span>
+                                                </p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p>2000 EUR</p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p>15 %</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="add-remove-value-inputs">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <input class="form-control" type="text">
+                                            </div>
+                                            <div class="col-3">
+                                                <input class="form-control" type="text">
+                                            </div>
+                                            <div class="col-3">
+                                                <input class="form-control" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-with-icon" style="top: 30px">
+                                        <span class="btn-icon"><span class="et-icon icon-Ikona_kopiraj"></span></span>
+                                        Dodaj novo pozicijo zmanjšanja vrednosti
+                                    </button>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 right-column">
+                            <!-- include file history -->
+                            @@include('../partials/file-history.html')
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- include footer.html -->
+    @@include('../layouts/footer.html')
+</div>
+
+<!-- include hamburger sidebar -->
+@@include('../partials/dashboard-mobile-sidebar.html')
+
+<!-- include scripts.html -->
+@@include('../layouts/scripts.html')
+</body>
+</html>

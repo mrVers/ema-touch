@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="sl-SI">
+<head>
+    <!-- include head.html -->
+    @@include('../layouts/head.html', {
+    "title": "Dashboard"
+    })
+    <!-- include styles.html -->
+    @@include('../layouts/styles.html')
+</head>
+<body>
+<div class="wrapper" id="main-wrapper">
+    <section class="main-container dashboard">
+        <!-- include header.html -->
+        @@include('../layouts/header.html', {
+        "is-present": "d-block",
+        "title": "Vrednost rabljenega vozila"
+        })
+        <div class="container-main-wrapper">
+            <!-- include dashboard-sidebar -->
+            @@include('../partials/dashboard-sidebar.html')
+            <div class="inner-container">
+                <div class="container-fluid">
+                    <div class="row no-gutters">
+                        <div class="col-lg-8 main-column">
+                            <div class="main-content-wrapper">
+                                <section class="main-content-container">
+                                    <h1>Ford Fiesta 1,1 Trend (08/2017 - ) <span class="content-title-tag" title="Oznaka datoteke">890</span></h1>
+                                    <div class="main-content-navigation">
+                                        <nav class="nav">
+                                            <a class="nav-link active" href="module.index.html">Vrednotenje</a>
+                                            <a class="nav-link" href="module.decrease-value.html">Zmanjšanje vrednosti</a>
+                                            <a class="nav-link" href="#">Povečanje vrednosti</a>
+                                        </nav>
+                                    </div>
+                                    <div class="row dashboard-car-data">
+                                        <div class="col-md-6 narrow-data">
+                                            <h3 class="label-title">Vozilo</h3>
+                                            <div class="form-group">
+                                                <label>Eurotax koda</label>
+                                                <p>123456</p>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Znamka</label>
+                                                <p>Ford (D)</p>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Model</label>
+                                                <p>Fiesta (08/2017 - )</p>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Tip</label>
+                                                <p>Fiesta 1,1 Trend</p>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Prodajno obdobje</label>
+                                                <p>Od 1.8.2012</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="main-car-image">
+                                                <img class="main-car-image-src" src="./images/background.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-calculation" style="margin-top: 20px">
+                                        <h3 class="label-title">Izračun</h3>
+                                        <div class="form-group row">
+                                            <div class="col-md-4"></div>
+                                            <div class="col-md-4">
+                                                <div class="form-check right-side">
+                                                    <label class="form-check-label" for="odkup">Odkup</label>
+                                                    <input class="form-check-input" type="checkbox" id="odkup">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-check right-side">
+                                                    <label class="form-check-label" for="prodaja">Prodaja</label>
+                                                    <input class="form-check-input" type="checkbox" id="prodaja">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-md-4 col-form-label">Tržni položaj</label>
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-md-4 col-form-label">Stanje vozila</label>
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-md-4 col-form-label">Seštevek pozicij zmanjsanja vozila</label>
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-md-4 col-form-label">Seštevek pozicij zmanjsanja vrednosti</label>
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-md-4 col-form-label">Seštevek pozicij povecanja vrednosti</label>
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-md-4 col-form-label">Seštevek dodatne opreme</label>
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-md-4 col-form-label">
+                                                Izracun vrednosti z DDV
+                                                <input class="label-input" type="checkbox" checked>
+                                            </label>
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="modal-calculation-last">
+                                            <div class="form-group row ">
+                                                <label class="col-md-4 col-form-label">
+                                                    Osebna ponudba
+                                                </label>
+                                                <div class="col-md-4">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="row justify-content-end" style="padding: 0 15px;">
+                                                <button type="button" class="btn btn-primary">Izvedi vrednotenje</button>
+                                            </div>
+                                            <div class="row justify-content-end" style="padding: 0 15px;">
+                                                <p class="tokens-amount">Št. žetonov: 5</p>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 right-column">
+                            <!-- include file history -->
+                            @@include('../partials/file-history.html')
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- include footer.html -->
+    @@include('../layouts/footer.html')
+</div>
+
+<!-- include hamburger sidebar -->
+@@include('../partials/dashboard-mobile-sidebar.html')
+
+<!-- include scripts.html -->
+@@include('../layouts/scripts.html')
+</body>
+</html>
