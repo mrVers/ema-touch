@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="sl-SI">
+<head>
+    <!-- include head.html -->
+    @@include('../layouts/head.html', {
+    "title": "Dashboard"
+    })
+    <!-- include styles.html -->
+    @@include('../layouts/styles.html')
+</head>
+<body>
+<div class="wrapper" id="main-wrapper">
+    <section class="main-container dashboard">
+        <!-- include header.html -->
+        @@include('../layouts/header.html', {
+        "is-present": "d-block",
+        "title": "Kalkulacija popravila"
+        })
+        <div class="container-main-wrapper">
+            <!-- include dashboard-sidebar -->
+            @@include('../partials/dashboard-sidebar.html')
+            <div class="inner-container">
+                <div class="container-fluid">
+                    <div class="row no-gutters">
+                        <div class="col-lg-8 main-column">
+                            <div class="main-content-wrapper">
+                                <section class="main-content-container">
+                                    <h1>Ford Fiesta 1,1 Trend (08/2017 - ) <span class="content-title-tag" title="Oznaka datoteke">890</span></h1>
+                                    <div class="main-content-navigation">
+                                        <nav class="nav">
+                                            <a class="nav-link active" href="ere.index.html">Vrednotenje</a>
+                                            <a class="nav-link" href="ere.damage.html">Podatki o škodi</a>
+                                            <a class="nav-link" href="ere.owner.html">Lastnik</a>
+                                            <a class="nav-link" href="ere.attachments.html">Priloge</a>
+                                            <a class="nav-link" href="ere.causer.html">Povzročitelj</a>
+                                            <a class="nav-link" href="ere.header.html">Glava podjetja</a>
+                                            <a class="nav-link" href="ere.record.html">Cenilni zapisnik</a>
+                                        </nav>
+                                    </div>
+                                    <div class="row ere">
+                                        <a class="edit-ere" href="settings.discounts.html">
+                                            Uredi ure ali popuste
+                                        </a>
+                                        <div class="col-md-12">
+                                            <label class="label">Izberi ure</label>
+                                            <div class="form-group">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" name="hours" type="radio" value="" id="osnovno">
+                                                    <label class="form-check-label" for="osnovno">
+                                                        Osnovno
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" name="hours" type="radio" value="" id="posebni">
+                                                    <label class="form-check-label" for="posebni">
+                                                        Posebni
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" name="hours" type="radio" value="" id="posebni2">
+                                                    <label class="form-check-label" for="posebni2">
+                                                        Posebni 2
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label class="label">Izberi popuste</label>
+                                            <div class="form-group">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" name="discounts" type="radio" value="" id="osnovno_p">
+                                                    <label class="form-check-label" for="osnovno_p">
+                                                        Osnovno (10 EUR 15 EUR)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" name="discounts" type="radio" value="" id="posebni_p">
+                                                    <label class="form-check-label" for="posebni_p">
+                                                        Posebni (10 EUR 15 EUR)
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="lak_index">Lakirni index</label>
+                                                    <input type="number" class="form-control" id="lak_index" >
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="dod_mat">Dodatek za mat. pri lakiranju</label>
+                                                    <input type="number" class="form-control" id="dod_mat" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary">Vstopi v ERE</button>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 right-column">
+                            <!-- include file history -->
+                            @@include('../partials/file-history.html')
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- include footer.html -->
+    @@include('../layouts/footer.html')
+</div>
+
+<!-- include hamburger sidebar -->
+@@include('../partials/dashboard-mobile-sidebar.html')
+
+<!-- include scripts.html -->
+@@include('../layouts/scripts.html')
+</body>
+</html>

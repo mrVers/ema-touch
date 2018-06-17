@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="sl-SI">
+<head>
+    <!-- include head.html -->
+    @@include('../layouts/head.html', {
+    "title": "Dashboard"
+    })
+    <!-- include styles.html -->
+    @@include('../layouts/styles.html')
+</head>
+<body>
+<div class="wrapper" id="main-wrapper">
+    <section class="main-container dashboard">
+        <!-- include header.html -->
+        @@include('../layouts/header.html', {
+        "is-present": "d-block",
+        "title": "Kalkulacija popravila"
+        })
+        <div class="container-main-wrapper">
+            <!-- include dashboard-sidebar -->
+            @@include('../partials/dashboard-sidebar.html')
+            <div class="inner-container">
+                <div class="container-fluid">
+                    <div class="row no-gutters">
+                        <div class="col-lg-8 main-column">
+                            <div class="main-content-wrapper">
+                                <section class="main-content-container">
+                                    <h1>Ford Fiesta 1,1 Trend (08/2017 - ) <span class="content-title-tag" title="Oznaka datoteke">890</span></h1>
+                                    <div class="main-content-navigation">
+                                        <nav class="nav">
+                                            <a class="nav-link" href="ere.index.html">Vrednotenje</a>
+                                            <a class="nav-link" href="ere.damage.html">Podatki o škodi</a>
+                                            <a class="nav-link" href="ere.owner.html">Lastnik</a>
+                                            <a class="nav-link active" href="ere.attachments.html">Priloge</a>
+                                            <a class="nav-link" href="ere.causer.html">Povzročitelj</a>
+                                            <a class="nav-link" href="ere.header.html">Glava podjetja</a>
+                                            <a class="nav-link" href="ere.record.html">Cenilni zapisnik</a>
+                                        </nav>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="drop-zone">
+                                                <div class="inner-drop-zone">
+                                                    <p class="drop-text">Spustite datoteke sem <br> ali</p>
+                                                    <button type="button" class="btn btn-primary drop-btn">
+                                                        <label for="drop-input">Izberite datoteke</label>
+                                                    </button>
+                                                </div>
+                                                <input class="drop-input-hidden" id="drop-input" name="drop-input" type="file" multiple="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                                <label>Naložene datoteke</label>
+                                            </div>
+                                            <div class="uploaded-file">
+                                                <div class="uploaded-file-name">
+                                                    <span class="uploaded-file-icon"><span class="et-icon icon-Ikona_datoteka"></span></span>
+                                                    <p class="uploaded-file-text">Ime datoteke</p>
+                                                </div>
+                                                <div class="uploaded-file-action">
+                                                    <label class="upload-file-type-name" for="file-type-1">Tip datoteke</label>
+                                                    <div class="form-group ema-select">
+                                                        <span class="oi oi-chevron-bottom"></span>
+                                                        <select id="file-type-1" name="file-type-1" class="form-control">
+                                                            <option value="">Razno</option>
+                                                            <option value="">...</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="upload-file-delete" title="Izbris datoteke">
+                                                        <span class="oi oi-x"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="uploaded-file">
+                                                <div class="uploaded-file-name">
+                                                    <span class="uploaded-file-icon"><span class="et-icon icon-Ikona_datoteka"></span></span>
+                                                    <p class="uploaded-file-text">Ime datoteke</p>
+                                                </div>
+                                                <div class="uploaded-file-action">
+                                                    <label class="upload-file-type-name" for="file-type-2">Tip datoteke</label>
+                                                    <div class="form-group ema-select">
+                                                        <span class="oi oi-chevron-bottom"></span>
+                                                        <select id="file-type-2" name="file-type-2" class="form-control">
+                                                            <option value="">Razno</option>
+                                                            <option value="">...</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="upload-file-delete" title="Izbris datoteke">
+                                                        <span class="oi oi-x"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 right-column">
+                            <!-- include file history -->
+                            @@include('../partials/file-history.html')
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- include footer.html -->
+    @@include('../layouts/footer.html')
+</div>
+
+<!-- include hamburger sidebar -->
+@@include('../partials/dashboard-mobile-sidebar.html')
+
+<!-- include scripts.html -->
+@@include('../layouts/scripts.html')
+</body>
+</html>
