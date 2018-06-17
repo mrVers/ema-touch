@@ -1,5 +1,6 @@
 .header-container {
-  height: 270px;
+  height: 240px;
+  z-index: 1;
 
   &:before {
     background-color: rgba(42, 54, 59, 0.85);
@@ -16,7 +17,7 @@
 
   &:after {
     background-image: url(../images/background.jpg);
-    background-position: center 80%;
+    background-position: center -250px;
     background-size: cover;
     background-repeat: no-repeat;
     height: inherit;
@@ -28,10 +29,16 @@
     z-index: -1;
     left: 0;
     right: 0;
+
+    @media screen and (max-width: 1140px){
+      background-position: center 0;
+    }
   }
 
   @media screen and (max-width: 767px){
-    height: 200px;
+    height: 180px;
+    display: block;
+    position: relative !important;
   }
 
 }
@@ -40,6 +47,7 @@
   height: 270px;
   position: fixed;
   top: 0;
+  width: 100%;
 
   &:before {
     background-color: rgba(42, 54, 59, 0.85);
@@ -56,7 +64,7 @@
 
   &:after {
     background-image: url(../images/background.jpg);
-    background-position: center -180px;
+    background-position: center -250px;
     background-size: cover;
     background-repeat: no-repeat;
     height: inherit;
@@ -68,6 +76,10 @@
     z-index: -1;
     left: 0;
     right: 0;
+
+    @media screen and (max-width: 1140px){
+      background-position: center 0;
+    }
   }
 }
 
@@ -186,12 +198,33 @@
     justify-content: space-between;
     align-items: center;
 
+    @media screen and (max-width: 1090px) {
+      justify-content: flex-end;
+    }
+
+    @media screen and (max-width: 768px) {
+      margin-left: 0;
+      justify-content: center;
+    }
+
   }
 
   .header-title {
     color: #fff;
     padding-left: 10px;
     max-width: 50%;
+
+    @media screen and (max-width: 1519px) {
+      max-width: 43%;
+    }
+
+    @media screen and (max-width: 1240px) {
+      max-width: 40%;
+    }
+
+    @media screen and (max-width: 1090px) {
+      display: none;
+    }
 
     h1 {
       letter-spacing: 2.3px;
@@ -201,6 +234,10 @@
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+
+      @media screen and (max-width: 1240px) {
+        font-size: 26px;
+      }
     }
   }
 
@@ -208,11 +245,24 @@
     justify-content: flex-end;
     align-items: center;
     padding: 0 20px;
+
+    @media screen and (max-width: 500px) {
+      padding: 0;
+    }
+
     .big-btn {
       color: #eee;
       margin: 0 24px;
       font-size: 14px;
       padding: 0;
+
+      @media screen and (max-width: 1399px) {
+        margin: 0 10px;
+      }
+
+      @media screen and (max-width: 500px) {
+        font-size: 12px;
+      }
 
       &:hover {
         color: #fff;
