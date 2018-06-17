@@ -12,7 +12,9 @@
 <div class="wrapper" id="main-wrapper">
     <section class="main-container dashboard">
         <!-- include header.html -->
-        @@include('../layouts/header.html')
+        @@include('../layouts/header.html', {
+        "is-present": "d-block"
+        })
         <div class="container-main-wrapper">
             <!-- include dashboard-sidebar -->
             @@include('../partials/dashboard-sidebar.html')
@@ -22,7 +24,7 @@
                         <div class="col-lg-8 main-column">
                             <div class="main-content-wrapper">
                                 <section class="main-content-container">
-                                    <h1>Datoteka</h1>
+                                    <h1>Ford Fiesta 1,1 Trend (08/2017 - ) <span class="content-title-tag" title="Oznaka datoteke">890</span></h1>
                                     <div class="main-content-navigation">
                                         <nav class="nav">
                                             <a class="nav-link active" href="dashboard.file.html">Vozilo</a>

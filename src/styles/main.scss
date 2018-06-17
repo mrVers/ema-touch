@@ -46,7 +46,7 @@ body {
     content: '';
     display: block;
     position: absolute;
-    top: -120px;
+    top: -140px;
     bottom: 0;
     z-index: 1;
     left: 40px;
@@ -64,8 +64,12 @@ body {
 
   .sidebar-nav {
     z-index: 2;
-    margin-top: 90px;
+    margin-top: 80px;
     position: relative;
+
+    .nav-link-row {
+      margin-bottom: 10px;
+    }
 
     .nav-link {
       color: #2a363b;
@@ -82,6 +86,12 @@ body {
 
       &.active {
         border-left: 4px solid #0091b3;
+      }
+
+      &.disabled {
+        opacity: 0.5;
+        pointer-events: none;
+        cursor: default;
       }
     }
 
@@ -133,10 +143,10 @@ body {
       }
 
       .container-main-wrapper {
-        padding-top: 250px;
+        padding-top: 270px;
 
         .inner-container {
-          margin-left: 250px;
+          margin-left: 270px;
         }
       }
     }
@@ -153,6 +163,16 @@ body {
 
   .main-content-container {
     padding: 30px;
+
+    .content-title-tag {
+      color: #fff;
+      background-color: #0091b3;
+      padding: 3px 7px;
+      font-size: 12px;
+      vertical-align: middle;
+      border-radius: 4px;
+      margin-left: 5px;
+    }
 
     &.right-sidebar {
       padding: 30px 20px;
@@ -649,9 +669,13 @@ table.table-bordered.dataTable tbody th, table.table-bordered.dataTable tbody td
 }
 
 .table-bordered {
-  border: 1px solid #e5e8eb;
+  border: 1px solid #e6e5e4;
   border-top: none;
   border-bottom: none;
+
+  th, td {
+    border: 1px solid #e6e5e4;
+  }
 }
 
 .table-striped tbody tr:nth-of-type(odd),
@@ -663,12 +687,12 @@ table.table-bordered.dataTable tbody th, table.table-bordered.dataTable tbody td
 }
 
 .table .thead-light th {
-  border-color: #e5e8eb;
+  border-color: #e6e5e4;
   background-color: #f4f6f9;
 }
 
 .table.table-sm th, .table.table-sm td {
-  padding: 0.3rem !important;
+  padding: 0.5em 0.3rem !important;
 }
 
 .table.table-sm th {
@@ -1327,6 +1351,10 @@ table.table-bordered.dataTable tbody th, table.table-bordered.dataTable tbody td
   margin-top: -20px;
   .side-history-item {
     border-bottom: 1px solid #aaa;
+    cursor: pointer;
+    &:hover {
+      background-color: #fafafa;
+    }
 
     .side-history-item-data {
       padding: 20px 0;

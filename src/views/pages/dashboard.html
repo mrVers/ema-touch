@@ -12,7 +12,9 @@
 <div class="wrapper" id="main-wrapper">
     <section class="main-container dashboard">
         <!-- include header.html -->
-        @@include('../layouts/header.html')
+        @@include('../layouts/header.html', {
+        "is-present": "d-none"
+        })
         <div class="container-main-wrapper">
             <!-- include dashboard-sidebar -->
             @@include('../partials/dashboard-sidebar.html')
