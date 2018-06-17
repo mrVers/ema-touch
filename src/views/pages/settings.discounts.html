@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="sl-SI">
+<head>
+    <!-- include head.html -->
+    @@include('../layouts/head.html', {
+    "title": "Dashboard"
+    })
+    <!-- include styles.html -->
+    @@include('../layouts/styles.html')
+</head>
+<body>
+<div class="wrapper" id="main-wrapper">
+    <section class="main-container dashboard">
+        <!-- include header.html -->
+        @@include('../layouts/header.html', {
+        "is-present": "d-none",
+        "title": "Nastavitve"
+        })
+        <div class="container-main-wrapper">
+            <!-- include dashboard-sidebar -->
+            @@include('../partials/dashboard-sidebar.html')
+            <div class="inner-container">
+                <div class="container-fluid">
+                    <div class="row no-gutters">
+                        <div class="col-lg-12 main-column">
+                            <div class="main-content-wrapper">
+                                <section class="main-content-container">
+                                    <div class="main-content-navigation">
+                                        <nav class="nav">
+                                            <a class="nav-link" href="settings.index.html">Nastavitve</a>
+                                            <a class="nav-link active" href="settings.discounts.html">Ure in popusti</a>
+                                            <a class="nav-link" href="settings.contacts.html">Kontakti</a>
+                                            <a class="nav-link" href="settings.header.html">Glava podjetja</a>
+                                        </nav>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <label class="label" style="margin-bottom: 15px">Ure</label>
+                                            <table class="table table-sm">
+                                                <thead>
+                                                <tr>
+                                                    <th>Id</th>
+                                                    <th>Market</th>
+                                                    <th>Opis</th>
+                                                    <th>Klepar</th>
+                                                    <th>Mehanik</th>
+                                                    <th>Električar</th>
+                                                    <th>Mehanotronik</th>
+                                                    <th>Toča</th>
+                                                    <th>Ličar</th>
+                                                    <th>Tapetnik</th>
+                                                    <th>Pomožna dela</th>
+                                                    <th></th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>SI</td>
+                                                    <td>Osnovno</td>
+                                                    <td>30 EUR</td>
+                                                    <td>35 EUR</td>
+                                                    <td>10 EUR</td>
+                                                    <td>16 EUR</td>
+                                                    <td>5 %</td>
+                                                    <td>10 %</td>
+                                                    <td>15 EUR</td>
+                                                    <td>20 EUR</td>
+                                                    <td><span class="oi oi-x"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>SI</td>
+                                                    <td>Osnovno</td>
+                                                    <td>30 EUR</td>
+                                                    <td>35 EUR</td>
+                                                    <td>10 EUR</td>
+                                                    <td>16 EUR</td>
+                                                    <td>5 %</td>
+                                                    <td>10 %</td>
+                                                    <td>15 EUR</td>
+                                                    <td>20 EUR</td>
+                                                    <td><span class="oi oi-x"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>SI</td>
+                                                    <td>Nova ponudba 2018</td>
+                                                    <td>30 EUR</td>
+                                                    <td>35 EUR</td>
+                                                    <td>10 EUR</td>
+                                                    <td>16 EUR</td>
+                                                    <td>5 %</td>
+                                                    <td>10 %</td>
+                                                    <td>15 EUR</td>
+                                                    <td>20 EUR</td>
+                                                    <td><span class="oi oi-x"></span></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <button class="btn btn-primary">Dodaj ure</button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <label class="label" style="margin-bottom: 15px">Popusti</label>
+                                            <table class="table table-sm">
+                                                <thead>
+                                                <tr>
+                                                    <th>Id</th>
+                                                    <th>Market</th>
+                                                    <th>Opis</th>
+                                                    <th>Ličar</th>
+                                                    <th>Delo</th>
+                                                    <th>Material</th>
+                                                    <th>Ličarski material</th>
+                                                    <th></th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>SI</td>
+                                                    <td>Osnovno</td>
+                                                    <td>30 EUR</td>
+                                                    <td>5 %</td>
+                                                    <td>10 %</td>
+                                                    <td>20 EUR</td>
+                                                    <td><span class="oi oi-x"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>SI</td>
+                                                    <td>Osnovno</td>
+                                                    <td>30 EUR</td>
+                                                    <td>5 %</td>
+                                                    <td>10 %</td>
+                                                    <td>20 EUR</td>
+                                                    <td><span class="oi oi-x"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>SI</td>
+                                                    <td>Osnovno</td>
+                                                    <td>30 EUR</td>
+                                                    <td>5 %</td>
+                                                    <td>10 %</td>
+                                                    <td>20 EUR</td>
+                                                    <td><span class="oi oi-x"></span></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <button class="btn btn-primary">Dodaj popust</button>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="col-lg-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- include footer.html -->
+    @@include('../layouts/footer.html')
+</div>
+
+<!-- include hamburger sidebar -->
+@@include('../partials/dashboard-mobile-sidebar.html')
+
+<!-- include scripts.html -->
+@@include('../layouts/scripts.html')
+</body>
+</html>

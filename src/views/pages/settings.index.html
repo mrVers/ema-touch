@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="sl-SI">
+<head>
+    <!-- include head.html -->
+    @@include('../layouts/head.html', {
+    "title": "Dashboard"
+    })
+    <!-- include styles.html -->
+    @@include('../layouts/styles.html')
+</head>
+<body>
+<div class="wrapper" id="main-wrapper">
+    <section class="main-container dashboard">
+        <!-- include header.html -->
+        @@include('../layouts/header.html', {
+        "is-present": "d-none",
+        "title": "Nastavitve"
+        })
+        <div class="container-main-wrapper">
+            <!-- include dashboard-sidebar -->
+            @@include('../partials/dashboard-sidebar.html')
+            <div class="inner-container">
+                <div class="container-fluid">
+                    <div class="row no-gutters">
+                        <div class="col-lg-12 main-column">
+                            <div class="main-content-wrapper">
+                                <section class="main-content-container">
+                                    <div class="main-content-navigation">
+                                        <nav class="nav">
+                                            <a class="nav-link active" href="settings.index.html">Nastavitve</a>
+                                            <a class="nav-link" href="settings.discounts.html">Ure in popusti</a>
+                                            <a class="nav-link" href="settings.contacts.html">Kontakti</a>
+                                            <a class="nav-link" href="settings.header.html">Glava podjetja</a>
+                                        </nav>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <form class="needs-validation" novalidate="">
+                                                <div class="form-group">
+                                                    <label for="name_surname">Ime in priimek</label>
+                                                    <input type="text" class="form-control" id="name_surname" required="" value="Alenka Kiher">
+                                                    <div class="valid-check"><span class="oi oi-check"></span></div>
+                                                    <div class="invalid-feedback">
+                                                        Polje je zahtevano.
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="email">Email</label>
+                                                    <input type="email" class="form-control" id="email" required="" value="alenka.kiher@podjetje.io">
+                                                    <div class="valid-check"><span class="oi oi-check"></span></div>
+                                                    <div class="invalid-feedback">
+                                                        Polje je zahtevano.
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="password">Geslo</label>
+                                                    <input type="password" class="form-control" id="password" required="" value="*****">
+                                                    <div class="valid-check"><span class="oi oi-check"></span></div>
+                                                    <div class="invalid-feedback">
+                                                        Polje je zahtevano.
+                                                    </div>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Posodobi</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="col-lg-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- include footer.html -->
+    @@include('../layouts/footer.html')
+</div>
+
+<!-- include hamburger sidebar -->
+@@include('../partials/dashboard-mobile-sidebar.html')
+
+<!-- include scripts.html -->
+@@include('../layouts/scripts.html')
+</body>
+</html>
