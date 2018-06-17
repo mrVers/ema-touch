@@ -6,7 +6,7 @@
                     <span class="icon-Ikona_domov nav-icon"></span>
                     <span class="nav-text">Domov</span>
                 </a>
-                <a class="nav-link" href="index.ema.html">
+                <a class="nav-link" data-toggle="modal" data-target="#newDocumentModal">
                     <span class="icon-Ikona_nova-datoteka nav-icon"></span>
                     <span class="nav-text">Nova datoteka</span>
                 </a>
@@ -55,3 +55,6 @@
     </div>
 </div>
 
+<!-- MODALS: SHOULD BE INCLUDED IN DOCUMENT FOOTER IN PRODUCTION -->
+@@include('../partials/new-document-modal.html')
+@@include('../partials/select-car-modal.html')

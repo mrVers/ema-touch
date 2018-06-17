@@ -97,6 +97,13 @@
       window.location.href = './dashboard.file.html';
     });
 
+    $('#openSelectCarModal').on('click', function(){
+      $('#newDocumentModal').modal('hide');
+      $('#newDocumentModal').on('hidden.bs.modal',function(){
+        $('#selectCarModal').modal('show');
+      });
+    });
+
 
   }, false);
 })();

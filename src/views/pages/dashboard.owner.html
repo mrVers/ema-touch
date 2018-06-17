@@ -36,115 +36,37 @@
                                         </nav>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="copy-fields">
-                                                <button class="btn copy-btn">
-                                                    <span class="btn-icon"><span class="et-icon icon-Ikona_kopiraj"></span></span>
-                                                    Izpolni lastnika
-                                                </button>
+                                        <div class="col-md-6">
+                                            <div class="form-group ema-select">
+                                                <label for="lastnik">Lastnik</label>
+                                                <span class="oi oi-chevron-bottom"></span>
+                                                <select id="lastnik" name="lastnik" class="form-control">
+                                                    <option value="">Izberi...</option>
+                                                    <option value="">...</option>
+                                                </select>
                                             </div>
-                                            <form class="needs-validation" novalidate="">
-                                                <div class="row">
-                                                    <div class="col-lg-6">
-                                                        <div class="form-group">
-                                                            <label for="podjetje">Podjetje</label>
-                                                            <input type="text" class="form-control" name="podjetje" id="podjetje" required="">
-                                                            <div class="valid-check"><span class="oi oi-check"></span></div>
-                                                            <div class="invalid-feedback">
-                                                                Polje je zahtevano.
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="nameSurname">Ime in priimek</label>
-                                                            <input type="text" class="form-control" name="nameSurname" id="nameSurname" required="">
-                                                            <div class="valid-check"><span class="oi oi-check"></span></div>
-                                                            <div class="invalid-feedback">
-                                                                Polje je zahtevano.
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="streetWithNumber">Ulica in hišna številka</label>
-                                                            <input type="text" class="form-control" name="streetWithNumber" id="streetWithNumber" required="">
-                                                            <div class="valid-check"><span class="oi oi-check"></span></div>
-                                                            <div class="invalid-feedback">
-                                                                Polje je zahtevano.
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-row">
-                                                            <div class="form-group col-sm-5">
-                                                                <label for="postalNumber">Poštna številka</label>
-                                                                <input type="number" class="form-control" name="postalNumber" id="postalNumber" required="">
-                                                                <div class="valid-check"><span class="oi oi-check"></span></div>
-                                                                <div class="invalid-feedback">
-                                                                    Polje je zahtevano.
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group col-sm-7">
-                                                                <label for="postalName">Pošta</label>
-                                                                <input type="text" class="form-control" name="postalName" id="postalName" required="">
-                                                                <div class="valid-check"><span class="oi oi-check"></span></div>
-                                                                <div class="invalid-feedback">
-                                                                    Polje je zahtevano.
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="country">Država</label>
-                                                            <input type="text" class="form-control" name="country" id="country" required="">
-                                                            <div class="valid-check"><span class="oi oi-check"></span></div>
-                                                            <div class="invalid-feedback">
-                                                                Polje je zahtevano.
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="vatID">Davčna številka</label>
-                                                            <input type="text" class="form-control" name="vatID" id="vatID" required="">
-                                                            <div class="valid-check"><span class="oi oi-check"></span></div>
-                                                            <div class="invalid-feedback">
-                                                                Polje je zahtevano.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="form-group">
-                                                            <label for="email">Email</label>
-                                                            <input type="email" class="form-control" name="email" id="email" required="">
-                                                            <div class="valid-check"><span class="oi oi-check"></span></div>
-                                                            <div class="invalid-feedback">
-                                                                Polje je zahtevano.
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="mobileNumber">Mobilna številka</label>
-                                                            <input type="tel" class="form-control" name="mobileNumber" id="mobileNumber" required="">
-                                                            <div class="valid-check"><span class="oi oi-check"></span></div>
-                                                            <div class="invalid-feedback">
-                                                                Polje je zahtevano.
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="telNumber">Telefonska številka</label>
-                                                            <input type="tel" class="form-control" name="telNumber" id="telNumber" required="">
-                                                            <div class="valid-check"><span class="oi oi-check"></span></div>
-                                                            <div class="invalid-feedback">
-                                                                Polje je zahtevano.
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="faxNumber">Fax številka</label>
-                                                            <input type="tel" class="form-control" name="faxNumber" id="faxNumber" required="">
-                                                            <div class="valid-check"><span class="oi oi-check"></span></div>
-                                                            <div class="invalid-feedback">
-                                                                Polje je zahtevano.
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="comment">Opombe</label>
-                                                            <textarea class="form-control" id="comment" rows="3"></textarea>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </form>
+                                            <div class="form-group ema-select">
+                                                <label for="voznik">Voznik</label>
+                                                <span class="oi oi-chevron-bottom"></span>
+                                                <select id="voznik" name="voznik" class="form-control">
+                                                    <option value="">Izberi...</option>
+                                                    <option value="">...</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group ema-select">
+                                                <label for="leasing">Leasing</label>
+                                                <span class="oi oi-chevron-bottom"></span>
+                                                <select id="leasing" name="leasing" class="form-control">
+                                                    <option value="">Izberi...</option>
+                                                    <option value="">...</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <button class="btn btn-with-icon" data-toggle="modal" data-target="#newContactModal">
+                                                <span class="btn-icon"><span class="et-icon icon-Ikona_kopiraj"></span></span>
+                                                Nov kontakt
+                                            </button>
                                         </div>
                                     </div>
                                 </section>
@@ -163,6 +85,9 @@
 
     <!-- include footer.html -->
     @@include('../layouts/footer.html')
+
+    <!-- include new-contact-modal.html -->
+    @@include('../partials/new-contact-modal.html')
 </div>
 
 <!-- include hamburger sidebar -->

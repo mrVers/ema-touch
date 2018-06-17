@@ -3,7 +3,7 @@
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Izbor vozila</h5>
+                <h5 class="modal-title">Izbor vozila</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -16,14 +16,14 @@
                             <input type="text" class="form-control" name="eCode" id="eCode">
                         </div>
                         <div class="form-group ema-select">
-                            <label for="carType">Vrsta vozila</label>
+                            <label for="myCarType">Vrsta vozila</label>
                             <i class="oi oi-chevron-bottom"></i>
-                            <select id="carType" name="carType" class="form-control">
+                            <select id="myCarType" name="carType" class="form-control">
                                 <option value="" selected>Izberi...</option>
                             </select>
                         </div>
                         <div class="form-group ema-select">
-                            <label for="carType">Znamka</label>
+                            <label for="carBrand">Znamka</label>
                             <i class="oi oi-chevron-bottom"></i>
                             <select id="carBrand" name="carBrand" class="form-control">
                                 <option value="" selected>Izberi...</option>
@@ -56,7 +56,7 @@
                     </div>
                 </div>
                 <div class="table-responsive">
-                    <table id="table_id" class="table table-sm table-bordered table-hover table-striped">
+                    <table id="table_id_modal" class="table table-sm table-bordered table-hover table-striped">
                         <thead>
                         <tr>
                             <th scope="col">E-koda</th>
@@ -126,8 +126,7 @@
 
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <a href="ema_5a.html"><button type="button" class="btn btn-primary">Save changes</button></a>
+                <a href="ema_5a.html"><button type="button" class="btn btn-primary">Izberi</button></a>
             </div>
         </div>
     </div>

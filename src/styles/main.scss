@@ -82,6 +82,7 @@ body {
       &:hover {
         border-left: 4px solid #0091b3;
         color: #0091b3;
+        cursor: pointer;
       }
 
       &.active {
@@ -480,6 +481,14 @@ body {
         margin-left: 1rem;
       }
     }
+
+    .modal-dialog & {
+      padding-left: 2rem;
+      margin-bottom: 7px;
+      .form-check-input {
+        margin-left: -2rem;
+      }
+    }
   }
 }
 
@@ -592,7 +601,10 @@ body {
   .modal-header {
     border-bottom: 0;
     .modal-title {
-      font-size: 26px;
+      font-size: 25px;
+      letter-spacing: 1.3px;
+      text-align: left;
+      color: #2a363b;
     }
   }
 
@@ -604,6 +616,9 @@ body {
     img {
       width: inherit;
     }
+  }
+  .modal-footer {
+    border-top: 0;
   }
 }
 
@@ -739,6 +754,10 @@ table.table-bordered.dataTable tbody th, table.table-bordered.dataTable tbody td
 @media (min-width: 992px) {
   .modal-lg {
     max-width: 1024px;
+  }
+
+  .modal-md {
+    max-width: 768px;
   }
 }
 
@@ -1155,6 +1174,7 @@ table.table-bordered.dataTable tbody th, table.table-bordered.dataTable tbody td
     margin-bottom: 15px;
     .nav-link {
       color: #fff;
+      cursor: pointer;
 
       &:hover, &.active {
         background-color: #68bcd4;

@@ -66,7 +66,7 @@
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <button class="btn btn-with-icon">
+                                            <button class="btn btn-with-icon" data-toggle="modal" data-target="#addCarGearModal">
                                                 <span class="btn-icon"><span class="et-icon icon-Ikona_kopiraj"></span></span>
                                                 Dodaj novo serijsko opremo
                                             </button>
@@ -93,7 +93,7 @@
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <button class="btn btn-with-icon">
+                                            <button class="btn btn-with-icon" data-toggle="modal" data-target="#addCarGearModal">
                                                 <span class="btn-icon"><span class="et-icon icon-Ikona_kopiraj"></span></span>
                                                 Dodaj novo dodatno opremo
                                             </button>
@@ -115,6 +115,9 @@
 
     <!-- include footer.html -->
     @@include('../layouts/footer.html')
+
+    <!-- include add-car-gear-modal.html -->
+    @@include('../partials/add-car-gear-modal.html')
 </div>
 
 <!-- include hamburger sidebar -->
