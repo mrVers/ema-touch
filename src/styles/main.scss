@@ -487,23 +487,6 @@ body {
     font-size: 24px;
   }
 
-  .form-control {
-    border-color: #e6e5e4;
-
-    &:focus {
-      border-color: #0091b3;
-      box-shadow: none !important;
-    }
-
-    &.is-valid, &:valid {
-      border-color: #e6e5e4;
-
-      ~ .valid-check {
-        display: block;
-      }
-    }
-  }
-
   &.block {
     margin-top: 30px;
     p, label {
@@ -540,6 +523,23 @@ body {
       .form-check-input {
         margin-left: -2rem;
       }
+    }
+  }
+}
+
+.form-control {
+  border-color: #e6e5e4;
+
+  &:focus {
+    border-color: #0091b3 !important;
+    box-shadow: none !important;
+  }
+
+  &.is-valid, &:valid {
+    border-color: #e6e5e4;
+
+    ~ .valid-check {
+      display: block;
     }
   }
 }
@@ -664,9 +664,10 @@ body {
     display: block;
     width: 100%;
     margin-top: 28px;
+    text-align: center;
 
     img {
-      width: inherit;
+      width: auto;
     }
   }
   .modal-footer {
@@ -1660,4 +1661,31 @@ table.table-bordered.dataTable tbody th, table.table-bordered.dataTable tbody td
   margin-top: -20px;
   margin-right: 20px;
   color: #2a363b;
+}
+
+.tokens-container {
+  .module-item {
+    margin-bottom: 5px;
+    .module-item-name {
+      display: inline-block;
+      width: 33%;
+      min-width: 270px;
+      .m-icon {
+        font-size: 38px;
+        margin-right: 10px;
+        vertical-align: middle;
+      }
+    }
+    .module-item-status {
+      display: inline-block;
+      .module-item-status-count {
+        font-weight: 700;
+      }
+    }
+
+    .module-item-action {
+      display: inline-block;
+      width: 70px;
+    }
+  }
 }

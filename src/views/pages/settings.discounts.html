@@ -100,7 +100,7 @@
                                                     </tbody>
                                                 </table>
                                             </div>
-                                            <button class="btn btn-primary">Dodaj ure</button>
+                                            <button class="btn btn-primary" data-toggle="modal" data-target="#addHoursModule">Dodaj ure</button>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -154,7 +154,7 @@
                                                 </tbody>
                                             </table>
                                             </div>
-                                            <button class="btn btn-primary">Dodaj popust</button>
+                                            <button class="btn btn-primary" data-toggle="modal" data-target="#addDiscountsModule">Dodaj popust</button>
                                         </div>
                                     </div>
                                 </section>
@@ -170,6 +170,12 @@
 
     <!-- include footer.html -->
     @@include('../layouts/footer.html')
+
+    <!-- include add-hours-module.html -->
+    @@include('../partials/add-hours-module.html')
+
+    <!-- include add-discounts-module.html -->
+    @@include('../partials/add-discounts-module.html')
 </div>
 
 <!-- include hamburger sidebar -->

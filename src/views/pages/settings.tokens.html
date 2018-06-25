@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="sl-SI">
+<head>
+    <!-- include head.html -->
+    @@include('../layouts/head.html', {
+    "title": "Dashboard"
+    })
+    <!-- include styles.html -->
+    @@include('../layouts/styles.html')
+</head>
+<body>
+<div class="wrapper" id="main-wrapper">
+    <section class="main-container dashboard">
+        <!-- include header.html -->
+        @@include('../layouts/header.html', {
+        "is-present": "d-none",
+        "title": "Nastavitve"
+        })
+        <div class="container-main-wrapper">
+            <!-- include dashboard-sidebar -->
+            @@include('../partials/dashboard-sidebar.html')
+            <div class="inner-container">
+                <div class="container-fluid">
+                    <div class="row no-gutters">
+                        <div class="col-lg-12 main-column">
+                            <div class="main-content-wrapper">
+                                <section class="main-content-container">
+                                    <div class="main-content-navigation">
+                                        <nav class="nav">
+                                            <a class="nav-link active" href="settings.tokens.html">Stanje</a>
+                                            <a class="nav-link" href="settings.tokens-buy.html">Nakup</a>
+                                        </nav>
+                                    </div>
+                                    <div class="tokens-container">
+                                        <div class="module-item">
+                                            <div class="module-item-name">
+                                                <span class="icon-Ikona_ERE m-icon"></span>
+                                                <span class="module-text">Kalkulacija popravila</span>
+                                            </div>
+                                            <div class="module-item-status">
+                                                <span class="module-item-status-count">5</span>
+                                            </div>
+                                        </div>
+                                        <div class="module-item">
+                                            <div class="module-item-name">
+                                                <span class="icon-Ikona_EVA m-icon"></span>
+                                                <span class="module-text">Vrednost rabljenega vozila</span>
+                                            </div>
+                                            <div class="module-item-status">
+                                                <span class="module-item-status-count">2</span>
+                                            </div>
+                                        </div>
+                                        <div class="module-item">
+                                            <div class="module-item-name">
+                                                <span class="icon-Ikona_MPC m-icon"></span>
+                                                <span class="module-text">Maloprodajna vrednost</span>
+                                            </div>
+                                            <div class="module-item-status">
+                                                <span class="module-item-status-count">15</span>
+                                            </div>
+                                        </div>
+                                        <div class="module-item">
+                                            <div class="module-item-name">
+                                                <span class="icon-Ikona_FOR m-icon"></span>
+                                                <span class="module-text">Napoved</span>
+                                            </div>
+                                            <div class="module-item-status">
+                                                <span class="module-item-status-count">20</span>
+                                            </div>
+                                        </div>
+                                        <div class="module-item">
+                                            <div class="module-item-name">
+                                                <span class="icon-Ikona_EC2 m-icon"></span>
+                                                <span class="module-text">Izracun PPMV Tablica 1</span>
+                                            </div>
+                                            <div class="module-item-status">
+                                                <span class="module-item-status-count">315</span>
+                                            </div>
+                                        </div>
+                                        <div class="module-item">
+                                            <div class="module-item-name">
+                                                <span class="icon-Ikona_EC3 m-icon"></span>
+                                                <span class="module-text">Izracun PPMV Procijena</span>
+                                            </div>
+                                            <div class="module-item-status">
+                                                <span class="module-item-status-count">14</span>
+                                            </div>
+                                        </div>
+                                        <div class="module-item">
+                                            <div class="module-item-name">
+                                                <span class="icon-Ikona_TLM m-icon"></span>
+                                                <span class="module-text">Totalna škoda</span>
+                                            </div>
+                                            <div class="module-item-status">
+                                                <span class="module-item-status-count">0</span>
+                                            </div>
+                                        </div>
+                                        <div class="module-item">
+                                            <div class="module-item-name">
+                                                <span class="icon-Ikona_MON m-icon"></span>
+                                                <span class="module-text">Monex</span>
+                                            </div>
+                                            <div class="module-item-status">
+                                                <span class="module-item-status-count">0</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="col-lg-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- include footer.html -->
+    @@include('../layouts/footer.html')
+</div>
+
+<!-- include hamburger sidebar -->
+@@include('../partials/dashboard-mobile-sidebar.html')
+
+<!-- include scripts.html -->
+@@include('../layouts/scripts.html')
+</body>
+</html>

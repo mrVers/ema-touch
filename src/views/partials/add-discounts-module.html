@@ -1,0 +1,98 @@
+<!-- Modal -->
+<div class="modal fade" id="addDiscountsModule" tabindex="-1" role="dialog" aria-labelledby="addDiscountsModule"
+     aria-hidden="true">
+    <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Dodaj popust</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form class="needs-validation" novalidate="">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group ema-select">
+                                <label for="myMarketDiscounts">Market</label>
+                                <i class="oi oi-chevron-bottom"></i>
+                                <select id="myMarketDiscounts" name="market" class="form-control">
+                                    <option value="" selected>SI</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="form-group">
+                                <label for="opis_discounts">Opis</label>
+                                <input type="text" class="form-control" name="opis_discounts" id="opis_discounts" required="">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-row">
+                                <div class="form-group col-md-8">
+                                    <label for="popust_licanje">Popust na licanje</label>
+                                    <input type="number" class="form-control" name="popust_licanje" id="popust_licanje" required="">
+                                </div>
+                                <div class="form-group ema-select col-md-4">
+                                    <label for="units_licanje">Enota</label>
+                                    <i class="oi oi-chevron-bottom"></i>
+                                    <select id="units_licanje" name="units_licanje" class="form-control">
+                                        <option value="" selected>EUR</option>
+                                        <option value="" selected>%</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-8">
+                                    <label for="popust_material">Popust na material</label>
+                                    <input type="number" class="form-control" name="popust_material" id="popust_material" required="">
+                                </div>
+                                <div class="form-group ema-select col-md-4">
+                                    <label for="units_material">Enota</label>
+                                    <i class="oi oi-chevron-bottom"></i>
+                                    <select id="units_material" name="market" class="form-control">
+                                        <option value="" selected>EUR</option>
+                                        <option value="" selected>%</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-row">
+                                <div class="form-group col-md-8">
+                                    <label for="popust_delo">Popust na delo</label>
+                                    <input type="number" class="form-control" name="popust_delo" id="popust_delo" required="">
+                                </div>
+                                <div class="form-group ema-select col-md-4">
+                                    <label for="units_delo">Enota</label>
+                                    <i class="oi oi-chevron-bottom"></i>
+                                    <select id="units_delo" name="units_delo" class="form-control">
+                                        <option value="" selected>EUR</option>
+                                        <option value="" selected>%</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-8">
+                                    <label for="popust_lic_material">Popust na licarski material</label>
+                                    <input type="number" class="form-control" name="popust_lic_material" id="popust_lic_material" required="">
+                                </div>
+                                <div class="form-group ema-select col-md-4">
+                                    <label for="units_lic_material">Enota</label>
+                                    <i class="oi oi-chevron-bottom"></i>
+                                    <select id="units_lic_material" name="market" class="form-control">
+                                        <option value="" selected>EUR</option>
+                                        <option value="" selected>%</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary" data-dismiss="modal">Potrdi</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
