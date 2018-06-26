@@ -50,7 +50,7 @@ a {
     content: '';
     display: block;
     position: absolute;
-    top: -140px;
+    top: -120px;
     bottom: 0;
     z-index: 1;
     left: 40px;
@@ -68,7 +68,7 @@ a {
 
   .sidebar-nav {
     z-index: 2;
-    margin-top: 80px;
+    margin-top: 90px;
     position: relative;
 
     .nav-link-row {
@@ -104,6 +104,12 @@ a {
       font-size: 38px;
       margin-right: 10px;
       vertical-align: middle;
+
+      &.nav-evac {
+        font-size: 50px;
+        line-height: 38px;
+        margin-right: -1px;
+      }
     }
   }
 
@@ -176,7 +182,7 @@ a {
       }
 
       .container-main-wrapper {
-        padding-top: 270px;
+        padding-top: 250px;
 
         @media screen and (max-width: 1279px) {
           margin-right: 10px;

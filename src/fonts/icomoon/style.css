@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?dmnrsa');
-  src:  url('fonts/icomoon.eot?dmnrsa#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?dmnrsa') format('truetype'),
-    url('fonts/icomoon.woff?dmnrsa') format('woff'),
-    url('fonts/icomoon.svg?dmnrsa#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?sh9xov');
+  src:  url('fonts/icomoon.eot?sh9xov#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?sh9xov') format('truetype'),
+    url('fonts/icomoon.woff?sh9xov') format('woff'),
+    url('fonts/icomoon.svg?sh9xov#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-Ikona_EVAC3:before {
+  content: "\e91e";
+}
+.icon-Ikona_EVAC2:before {
+  content: "\e91f";
+}
 .icon-Ikona_administracija:before {
   content: "\e904";
 }

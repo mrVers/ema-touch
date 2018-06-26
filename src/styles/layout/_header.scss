@@ -1,5 +1,5 @@
 .header-container {
-  height: 240px;
+  height: 220px;
   z-index: 1;
 
   &:before {
@@ -44,7 +44,7 @@
 }
 
 .header-background {
-  height: 270px;
+  height: 250px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -88,9 +88,14 @@
 }
 
 .header-top-content {
-  padding: 20px 20px 5px;
+  padding: 20px 20px 20px;
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width: 768px) {
+    padding: 20px 20px 10px;
+  }
+
   .header-logo {
     position: relative;
     padding: 0 20px;
@@ -200,6 +205,7 @@
     margin-left: 270px;
     display: flex;
     justify-content: space-between;
+    padding: 20px 0;
     align-items: center;
 
     @media screen and (max-width: 1090px) {
@@ -209,6 +215,7 @@
     @media screen and (max-width: 768px) {
       margin-left: 0;
       justify-content: center;
+      padding: 0;
     }
 
   }
@@ -272,6 +279,12 @@
       &:hover {
         color: #fff;
       }
+    }
+  }
+
+  .dash-top {
+    .header-bottom-action-buttons {
+      display: none !important;
     }
   }
 }
