@@ -99,7 +99,7 @@ a {
 
       &.disabled {
         opacity: 0.5;
-        pointer-events: none;
+        color: #2a363b;
         cursor: default;
       }
     }
@@ -115,12 +115,15 @@ a {
         margin-right: -1px;
       }
     }
-  }
 
-  @media screen and (max-height: 850px) {
-    overflow-y: scroll;
-    height: calc(100vh - 270px);
-    padding-bottom: 20px;
+    @media screen and (max-height: 850px) {
+      overflow-y: scroll;
+      height: calc(100vh - 310px);
+      padding-bottom: 20px;
+      padding-right: 20px;
+      width: 280px;
+      flex-direction: row !important;
+    }
   }
 }
 
@@ -1808,4 +1811,51 @@ table.table-bordered.dataTable tbody th, table.table-bordered.dataTable tbody td
 
 button:focus {
   outline: none;
+}
+
+.gallery-item {
+  outline: none;
+}
+
+.modal-search-images {
+  &.hidden {
+    display: none;
+  }
+}
+
+.mfp-bg {
+  z-index: 1062;
+  background: #0b0b0b;
+  opacity: 0.7;
+}
+
+.mfp-wrap {
+  z-index: 1064;
+}
+
+
+#toast-container {
+  .toast {
+    opacity: 1;
+    &:hover {
+      box-shadow: 0 0 12px #999;
+      cursor: default;
+    }
+
+    &.toast-info {
+      background-color: #68bcd4;
+    }
+
+    &.toast-success {
+      background-color: #00A767;
+    }
+
+    &.toast-warning {
+      background-color: #EC6839;
+    }
+
+    &.toast-error {
+      background-color: #D84C65;
+    }
+  }
 }

@@ -139,6 +139,31 @@
     // fire the first time
     onScroll();
 
+    // gallery
+    $('.gallery-item').magnificPopup({
+      type: 'image',
+      gallery:{
+        enabled: true
+      },
+      enableEscapeKey: false
+    });
+
+    // TOOLTIPS
+    $('[data-toggle="tooltip"]').tooltip();
+
+    // TOASTER
+    toastr.options = {
+      "positionClass": "toast-bottom-right"
+    };
+
+    // toaster example
+    $('.toastr-example').on('click', function(){
+      toastr.warning('Shranjeno');
+      toastr.info('Shranjeno');
+      toastr.success('Shranjeno');
+      toastr.error('Shranjeno');
+    });
+
 
   }, false);
 })();
