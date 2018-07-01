@@ -37,6 +37,129 @@
                                             <a class="nav-link active" href="ere.record.html">Cenilni zapisnik</a>
                                         </nav>
                                     </div>
+                                    <div class="row mb-3">
+                                        <div class="col-lg-6">
+                                            <div class="form-group ema-select">
+                                                <label for="sposobnost">Sposobnost za voznjo</label>
+                                                <span class="select-icon icon-Ikona_izberi"></span>
+                                                <select id="sposobnost" name="sposobnost" class="form-control">
+                                                    <option value="">Izberi...</option>
+                                                    <option value="">...</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group ema-select">
+                                                <label for="Predposkodbe">Predposkodbe</label>
+                                                <span class="select-icon icon-Ikona_izberi"></span>
+                                                <select id="Predposkodbe" name="Predposkodbe" class="form-control">
+                                                    <option value="">Izberi...</option>
+                                                    <option value="">...</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group ema-select">
+                                                <label for="sledi">Sledi prejsnjih popravil</label>
+                                                <span class="select-icon icon-Ikona_izberi"></span>
+                                                <select id="sledi" name="sledi" class="form-control">
+                                                    <option value="">Izberi...</option>
+                                                    <option value="">...</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group ema-select">
+                                                <label for="obloge">Stanje notranjih oblog</label>
+                                                <span class="select-icon icon-Ikona_izberi"></span>
+                                                <select id="obloge" name="obloge" class="form-control">
+                                                    <option value="">Izberi...</option>
+                                                    <option value="">...</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group ema-select">
+                                                <label for="korozija">Sledi korozije na</label>
+                                                <span class="select-icon icon-Ikona_izberi"></span>
+                                                <select id="korozija" name="korozija" class="form-control">
+                                                    <option value="">Izberi...</option>
+                                                    <option value="">...</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group ema-select">
+                                                <label for="motor">Stanje motorja in pot. prostora</label>
+                                                <span class="select-icon icon-Ikona_izberi"></span>
+                                                <select id="motor" name="motor" class="form-control">
+                                                    <option value="">Izberi...</option>
+                                                    <option value="">...</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group ema-select">
+                                                <label for="naosnovi">Na osnovi podatko o vzroku skode iz prijave in vidnih poskodb na vozilu</label>
+                                                <div style="position: relative">
+                                                    <span class="select-icon icon-Ikona_izberi"></span>
+                                                    <select id="naosnovi" name="naosnovi" class="form-control">
+                                                        <option value="">Izberi...</option>
+                                                        <option value="">...</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="opombe">Opombe</label>
+                                                <textarea class="form-control" id="opombe" rows="3"></textarea>
+                                            </div>
+                                            <div class="form-group ema-select">
+                                                <label for="Rentabilno">Popravilo vozila je</label>
+                                                <span class="select-icon icon-Ikona_izberi"></span>
+                                                <select id="Rentabilno" name="Rentabilno" class="form-control">
+                                                    <option value="">Rentabilno</option>
+                                                    <option value="">...</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="znesek">Do zneska</label>
+                                                <input type="number" class="form-control" name="znesek" id="znesek">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-12">
+                                            <h3 class="label-title">Administrativni podatki</h3>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group ema-select">
+                                                <label for="ogled">Ogled</label>
+                                                <span class="select-icon icon-Ikona_izberi"></span>
+                                                <select id="ogled" name="ogled" class="form-control">
+                                                    <option value="">Izberi...</option>
+                                                    <option value="">...</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="lokacija">Ogled vozila na</label>
+                                                <input type="text" class="form-control" name="lokacija" id="lokacija">
+                                            </div>
+                                            <div class="form-group date">
+                                                <label for="datumDogodka">Dne</label>
+                                                <input type="text" class="form-control" name="datumDogodka" id="datumDogodka" required="">
+                                                <div class="input-group-addon"><i class="et-icon icon-Ikona_koledar"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-12">
+                                            <h3 class="label-title">Priznani zneski</h3>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="urnaPostavka">Urna postavka za pooblascene servise</label>
+                                                <input type="text" class="form-control" name="urnaPostavka" id="urnaPostavka">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="urnaPostavka2">Urna postavka za ostale servise</label>
+                                                <input type="text" class="form-control" name="urnaPostavka2" id="urnaPostavka2">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="material">Material za licarska dela (z barvo in komoro)</label>
+                                                <input type="text" class="form-control" name="material" id="material">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </section>
                             </div>
                         </div>
