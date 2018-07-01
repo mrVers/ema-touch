@@ -96,7 +96,7 @@
     });
     */
 
-    $('.dashboard-table tr').click(function () {
+    $('.dashboard-table tbody tr').click(function () {
       window.location.href = './dashboard.file.html';
     });
 
@@ -162,6 +162,22 @@
       toastr.info('Shranjeno');
       toastr.success('Shranjeno');
       toastr.error('Shranjeno');
+    });
+
+
+    // CHART
+    var chart = new Chartist.Line('.ct-chart', {
+      labels: [1, 2, 3, 4, 5, 6, 7],
+      series: [
+        [18000, 17000, 16000, 15000, 14000, 13000, 12000]
+      ]
+    }, {
+      plugins: [
+        Chartist.plugins.tooltip({
+          appendToBody: true
+        })
+      ],
+      fullWidth: true
     });
 
 
