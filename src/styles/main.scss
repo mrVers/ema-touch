@@ -168,11 +168,52 @@ a {
           }
         }
 
+        &:before {
+          background-color: #0091b3;
+          height: 6px;
+          width: 325px;
+          content: '';
+          position: fixed;
+          opacity: 0;
+          transition: ease-in opacity 0.2s;
+          z-index: 10;
+
+          @media screen and (max-width: 1399px) {
+            width: 265px;
+          }
+
+          @media screen and (max-width: 1279px) {
+            display: none;
+          }
+
+          .scrolled & {
+            opacity: 1;
+          }
+        }
+
       }
       .main-column {
         display: flex;
         flex: 1;
         max-width: 100%;
+        width: calc(100vw - 640px);
+
+        @media screen and (max-width: 1399px) {
+          width: calc(100vw - 580px);
+        }
+
+        @media screen and (max-width: 1279px) {
+          width: calc(100vw - 310px);
+        }
+
+        @media screen and (max-width: 1023px) {
+          width: calc(100vw - 50px);
+        }
+
+        @media screen and (max-width: 767px) {
+          width: 100%;
+        }
+
       }
 
       .header-container {
@@ -182,7 +223,7 @@ a {
       }
 
       .container-main-wrapper {
-        padding-top: 250px;
+        padding-top: 220px;
 
         @media screen and (max-width: 1279px) {
           margin-right: 10px;
@@ -420,6 +461,25 @@ a {
 .main-column {
   margin-top: -30px;
 
+  &:before {
+    background-color: #0091b3;
+    height: 6px;
+    width: inherit;
+    content: '';
+    position: fixed;
+    opacity: 0;
+    transition: ease-in opacity 0.2s;
+    z-index: 10;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+
+    .scrolled & {
+      opacity: 1;
+    }
+  }
+
   &.with-breadcrumbs {
     margin-top: -90px;
     z-index: 5;
@@ -430,7 +490,7 @@ a {
   }
 
   .dashboard & {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       margin-top: 0;
     }
   }
@@ -454,7 +514,7 @@ a {
     min-width: 220px;
 
     @media screen and (max-width: 500px) {
-      display: block;
+      min-width: 50%;
     }
 
     ~ p {
@@ -1685,4 +1745,8 @@ table.table-bordered.dataTable tbody th, table.table-bordered.dataTable tbody td
       width: 70px;
     }
   }
+}
+
+button:focus {
+  outline: none;
 }

@@ -45,7 +45,8 @@
         'panel': document.getElementById('main-wrapper'),
         'menu': document.getElementById('hamburger'),
         'padding': 256,
-        'tolerance': 70
+        'tolerance': 70,
+        'touch': false
       });
 
       $('.hamburger-toggle-button').click(function () {
@@ -67,6 +68,7 @@
 
     }
 
+    /*
     var loader = '<div class="btn-loader">' +
       '<div class="btn-loader-el-1"></div>' +
       '<div class="btn-loader-el-2"></div>' +
@@ -92,6 +94,7 @@
       }, 2000);
 
     });
+    */
 
     $('.dashboard-table tr').click(function () {
       window.location.href = './dashboard.file.html';
@@ -103,6 +106,38 @@
         $('#selectCarModal').modal('show');
       });
     });
+
+    // scroll
+    var lastScrollY = 0;
+    var ticking = false;
+
+    var update = function() {
+      // do your stuff
+      ticking = false;
+
+      if (lastScrollY > 2) {
+        $('body').addClass('scrolled');
+      } else {
+        $('body').removeClass('scrolled');
+      }
+    };
+
+    var requestTick = function() {
+      if (!ticking) {
+        window.requestAnimationFrame(update);
+        ticking = true;
+      }
+    };
+
+    var onScroll = function() {
+      lastScrollY = window.scrollY;
+      requestTick();
+    };
+    // register scroll event
+    $(window).on('scroll', onScroll);
+
+    // fire the first time
+    onScroll();
 
 
   }, false);
