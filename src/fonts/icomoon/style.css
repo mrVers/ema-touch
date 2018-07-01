@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?sh9xov');
-  src:  url('fonts/icomoon.eot?sh9xov#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?sh9xov') format('truetype'),
-    url('fonts/icomoon.woff?sh9xov') format('woff'),
-    url('fonts/icomoon.svg?sh9xov#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?flahba');
+  src:  url('fonts/icomoon.eot?flahba#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?flahba') format('truetype'),
+    url('fonts/icomoon.woff?flahba') format('woff'),
+    url('fonts/icomoon.svg?flahba#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,10 +24,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-Ikona_EVAC3:before {
+.icon-Ikona_krizec:before {
+  content: "\e920";
+}
+.icon-Ikona_EEVAC3:before {
   content: "\e91e";
 }
-.icon-Ikona_EVAC2:before {
+.icon-Ikona_EEVAC2:before {
   content: "\e91f";
 }
 .icon-Ikona_administracija:before {
@@ -36,10 +39,10 @@
 .icon-Ikona_domov:before {
   content: "\e908";
 }
-.icon-Ikona_EC2:before {
+.icon-Ikona_EVAC2:before {
   content: "\e909";
 }
-.icon-Ikona_EC3:before {
+.icon-Ikona_EVAC3:before {
   content: "\e90a";
 }
 .icon-Ikona_ERE:before {

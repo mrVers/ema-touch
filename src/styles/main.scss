@@ -335,7 +335,7 @@ a {
           left: 0;
 
           &.active {
-            background-color: #d06262;
+            background-color: #EC6839;
           }
         }
 
@@ -1052,9 +1052,13 @@ table.table-bordered.dataTable tbody th, table.table-bordered.dataTable tbody td
 
     .upload-file-delete {
       display: inline-block;
-      font-size: 14px;
-      padding: 10px;
+      font-size: 28px;
+      padding: 0 2px;
       cursor: pointer;
+
+      span {
+        vertical-align: sub;
+      }
     }
   }
 }
@@ -1173,7 +1177,7 @@ table.table-bordered.dataTable tbody th, table.table-bordered.dataTable tbody td
       transition: background-color ease-in-out 0.1s;
 
       &:hover, &.active {
-        background-color: #d06262;
+        background-color: #EC6839;
       }
 
       &.circle-1 {
@@ -1383,7 +1387,7 @@ table.table-bordered.dataTable tbody th, table.table-bordered.dataTable tbody td
   color: #4a4a4a;
   z-index: 10;
   left: 20px;
-  top: 40px;
+  top: 35px;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 50px;
   height: 40px;
@@ -1927,4 +1931,15 @@ button:focus {
     border: 8px solid transparent;
     border-top-color: #a6a6a6;
   }
+}
+
+.phantom-vehicle-tag {
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  font-size: 10px;
+  border-radius: 50%;
+  background-color: #0091b3;
+  color: #fff;
+  text-align: center;
 }
