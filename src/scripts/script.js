@@ -145,7 +145,9 @@
       gallery:{
         enabled: true
       },
-      enableEscapeKey: false
+      enableEscapeKey: false,
+      prependTo: 'body',
+      focus: 'blank-input' // using a non existing input due to an error
     });
 
     // TOOLTIPS
@@ -164,22 +166,22 @@
       toastr.error('Shranjeno');
     });
 
-
     // CHART
-    var chart = new Chartist.Line('.ct-chart', {
-      labels: [1, 2, 3, 4, 5, 6, 7],
-      series: [
-        [18000, 17000, 16000, 15000, 14000, 13000, 12000]
-      ]
-    }, {
-      plugins: [
-        Chartist.plugins.tooltip({
-          appendToBody: true
-        })
-      ],
-      fullWidth: true
-    });
-
+    if($('.ct-chart').length) {
+      var chart = new Chartist.Line('.ct-chart', {
+        labels: [1, 2, 3, 4, 5, 6, 7],
+        series: [
+          [18000, 17000, 16000, 15000, 14000, 13000, 12000]
+        ]
+      }, {
+        plugins: [
+          Chartist.plugins.tooltip({
+            appendToBody: true
+          })
+        ],
+        fullWidth: true
+      });
+    }
 
   }, false);
 })();

@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?flahba');
-  src:  url('fonts/icomoon.eot?flahba#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?flahba') format('truetype'),
-    url('fonts/icomoon.woff?flahba') format('woff'),
-    url('fonts/icomoon.svg?flahba#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?lgkn0q');
+  src:  url('fonts/icomoon.eot?lgkn0q#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?lgkn0q') format('truetype'),
+    url('fonts/icomoon.woff?lgkn0q') format('woff'),
+    url('fonts/icomoon.svg?lgkn0q#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-Ikona_komentar:before {
+  content: "\e90f";
+}
 .icon-Ikona_krizec:before {
   content: "\e920";
 }
@@ -56,9 +59,6 @@
 }
 .icon-Ikona_izberi:before {
   content: "\e90e";
-}
-.icon-Ikona_komentar:before {
-  content: "\e90f";
 }
 .icon-Ikona_MON:before {
   content: "\e910";
