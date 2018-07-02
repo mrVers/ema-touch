@@ -1744,7 +1744,7 @@ table.table-bordered.dataTable tbody th, table.table-bordered.dataTable tbody td
 
 .edit-ere {
   font-size: 12px;
-  text-decoration: underline;
+  text-decoration: underline !important;
   cursor: pointer;
   margin-left: auto;
   margin-top: -20px;
@@ -1887,4 +1887,18 @@ button:focus {
   background-color: #0091b3;
   color: #fff;
   text-align: center;
+}
+
+.phantom-tag-big {
+  display: inline-block;
+  height: 17px;
+  width: 17px;
+  font-size: 12px;
+  border-radius: 50%;
+  background-color: #0091b3;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 17px;
+  margin-left: 3px;
 }
