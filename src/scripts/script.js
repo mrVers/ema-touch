@@ -84,12 +84,12 @@
       self.children('button[type=submit]').append(loader);
       self.children('button[type=submit]').addClass('loading');
 
-      setTimeout(function(){
+      setTimeout(function () {
         self.children('button[type=submit]').removeClass('loading');
         self.children('button[type=submit]').find('.btn-loader').remove();
         self.children('button[type=submit]').prop('disabled', false);
         // if (self.checkValidity() === true) {
-          self.unbind('submit').submit();
+        self.unbind('submit').submit();
         // }
       }, 2000);
 
@@ -100,9 +100,9 @@
       window.location.href = './dashboard.file.html';
     });
 
-    $('#openSelectCarModal').on('click', function(){
+    $('#openSelectCarModal').on('click', function () {
       $('#newDocumentModal').modal('hide');
-      $('#newDocumentModal').on('hidden.bs.modal',function(){
+      $('#newDocumentModal').on('hidden.bs.modal', function () {
         $('#selectCarModal').modal('show');
       });
     });
@@ -111,7 +111,7 @@
     var lastScrollY = 0;
     var ticking = false;
 
-    var update = function() {
+    var update = function () {
       // do your stuff
       ticking = false;
 
@@ -122,14 +122,14 @@
       }
     };
 
-    var requestTick = function() {
+    var requestTick = function () {
       if (!ticking) {
         window.requestAnimationFrame(update);
         ticking = true;
       }
     };
 
-    var onScroll = function() {
+    var onScroll = function () {
       lastScrollY = window.scrollY;
       requestTick();
     };
@@ -142,7 +142,7 @@
     // gallery
     $('.gallery-item').magnificPopup({
       type: 'image',
-      gallery:{
+      gallery: {
         enabled: true
       },
       enableEscapeKey: false,
@@ -159,7 +159,7 @@
     };
 
     // toaster example
-    $('.toastr-example').on('click', function(){
+    $('.toastr-example').on('click', function () {
       toastr.warning('Shranjeno');
       toastr.info('Shranjeno');
       toastr.success('Shranjeno');
@@ -167,7 +167,7 @@
     });
 
     // CHART
-    if($('.ct-chart').length) {
+    if ($('.ct-chart').length) {
       var chart = new Chartist.Line('.ct-chart', {
         labels: [1, 2, 3, 4, 5, 6, 7],
         series: [

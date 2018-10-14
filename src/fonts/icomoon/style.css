@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?lgkn0q');
-  src:  url('fonts/icomoon.eot?lgkn0q#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?lgkn0q') format('truetype'),
-    url('fonts/icomoon.woff?lgkn0q') format('woff'),
-    url('fonts/icomoon.svg?lgkn0q#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?f07yo0');
+  src:  url('fonts/icomoon.eot?f07yo0#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?f07yo0') format('truetype'),
+    url('fonts/icomoon.woff?f07yo0') format('woff'),
+    url('fonts/icomoon.svg?f07yo0#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-Ikona_AEVAC3:before {
+  content: "\e921";
+}
+.icon-Ikona_VIN:before {
+  content: "\e922";
+}
+.icon-Ikona_AEVA:before {
+  content: "\e923";
+}
+.icon-Ikona_AEVAC2:before {
+  content: "\e924";
+}
 .icon-Ikona_komentar:before {
   content: "\e90f";
 }
