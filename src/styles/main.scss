@@ -87,11 +87,11 @@ a {
       transition: color ease 0.1s;
       padding: 5px 0 0 10px;
       font-size: 15px;
+      cursor: pointer;
 
       &:hover {
         border-left: 4px solid #0091b3;
         color: #0091b3;
-        cursor: pointer;
       }
 
       &.active {
@@ -691,7 +691,10 @@ a {
   }
 }
 
-
+.result p {
+  font-weight: 700 !important;
+  font-size: 18px !important;
+}
 
 .form-control {
   border-color: #e6e5e4;
