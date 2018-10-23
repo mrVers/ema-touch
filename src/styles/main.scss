@@ -1197,7 +1197,7 @@ table.table-bordered.dataTable tbody th, table.table-bordered.dataTable tbody td
       line-height: 30px;
       position: absolute;
       border: 10px solid transparent;
-      box-sizing: initial;
+      box-sizing: content-box;
       background-clip: padding-box;
       cursor: pointer;
       transition: background-color ease-in-out 0.1s;
