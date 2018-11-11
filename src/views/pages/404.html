@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="sl-SI">
+<head>
+    <!-- include head.html -->
+    @@include('../layouts/head.html', {
+    "title": "Stran ni bila najdena. Napaka 404"
+    })
+    <!-- include styles.html -->
+    @@include('../layouts/styles.html')
+</head>
+<body>
+<div class="wrapper login-background">
+    <section class="main-container">
+        <div class="background-dots"></div>
+        <div class="block-container">
+            <div class="container-fluid">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-8 col-lg-6 col-xl-5">
+                        <div class="login-wrapper error-notice clearfix">
+                            <h1 class="error-title">404</h1>
+                            <p class="error-text">Stran ni bila najdena.</p>
+                            <p class="error-text-small"><a href="/">← Nazaj na datoteke</a></p>
+                            <img src="./images/eurotax_logo_login.png" class="login-logo mt-5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>

@@ -2026,3 +2026,27 @@ h1 {
     }
   }
 }
+
+.error-notice {
+  text-align: center;
+  .login-logo {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .error-title {
+    font-size: 110px;
+    color: #0091b3;
+    letter-spacing: 6px;
+    font-weight: 600;
+  }
+
+  .error-text {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 24px;
+  }
+
+  .error-text-small {
+    text-transform: uppercase;
+  }
+}

@@ -48,6 +48,7 @@
     "datatables.net-dt": "^1.10.16",
     "jquery": "^3.1.1",
     "magnific-popup": "^1.1.0",
+    "node-sass": "^4.10.0",
     "popper.js": "^1.14.3",
     "slideout": "^1.0.1",
     "toastr": "^2.1.4"
