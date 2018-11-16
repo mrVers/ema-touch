@@ -1555,6 +1555,10 @@ table.table-bordered.dataTable tbody th, table.table-bordered.dataTable tbody td
           }
         }
       }
+      &.disabled {
+        color: #888;
+        text-decoration: line-through;
+      }
     }
   }
 }
